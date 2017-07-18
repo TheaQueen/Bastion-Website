@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "Bastion",
+  "launch_path": "/index.html",
+  "description": "A Discord Bot that has Administration, Moderation, Searches, Game Server Stats, Player Stats, Music, Games, User Profiles, User Levels, Virtual Currencies, Humor and can even talk with you!",
+  "icons": {
+    "128": "/assets/images/bastion-logo-eye.png"
+  },
+  "developer": {
+    "name": "Sankarsan Kampa",
+    "url": "https://sankarsankampa.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Bastion",
+      "description": "A Discord Bot that has Administration, Moderation, Searches, Game Server Stats, Player Stats, Music, Games, User Profiles, User Levels, Virtual Currencies, Humor and can even talk with you!"
+    }
+  }
+}
