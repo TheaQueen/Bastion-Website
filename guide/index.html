@@ -1,4 +1,122 @@
-<!doctype html><html prefix="og: http://ogp.me/ns#"><meta charset=utf-8><meta name=robots content=noindex,nofollow><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=description content="Read how to install, setup and configure Bastion Bot and make your Discord Server AWESOME!"><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><title>Installation Guide | Bastion</title><meta property=og:title content="Installation Guide"><meta property=og:description content="Read how to install, setup and configure Bastion Bot and make your Discord Server AWESOME!"><meta property=og:url content=https://bastionbot.org/guide><meta property=og:image content=https://bastionbot.org/assets/images/BastionLogo_Text_Black.png><meta property=og:type content=website><meta property=og:site_name content=Bastion><meta name=msapplication-tap-highlight content=no><meta name=mobile-web-app-capable content=yes><meta name=application-name content=Bastion><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=apple-mobile-web-app-title content=Bastion><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel="shortcut icon" href=https://bastionbot.org/favicon.ico type=image/x-icon><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><link rel=mask-icon href=/safari-pinned-tab.svg color=#B3E3DE><meta name=theme-color content=#111111><link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel=stylesheet href=/styles/main.css><body id=top><div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"><header class=mdl-layout__header><div class=mdl-layout-icon></div><div class=mdl-layout__header-row><a href=/ ><span id=header-logo class=mdl-layout-title><img src=/assets/images/BastionLogo_Text_White.png height=35 width=auto></span></a><div class="mdl-tooltip mdl-tooltip--large" data-mdl-for=header-logo>Lovingly Designed &amp; Developed by @k3rn31p4nic</div><div class=mdl-layout-spacer></div><nav class="mdl-navigation mdl-layout--large-screen-only"><a class=mdl-navigation__link href=/donate/ >Donate</a> <a class=mdl-navigation__link href=https://discord.gg/fzx8fkt>Join Discord</a> <a href=/add/ ><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Add to Discord</button></a></nav></div></header><div class=mdl-layout__drawer><span class=mdl-layout-title><img src=/assets/images/BastionLogo_Text_Black.png alt=Bastion height=35 width=auto></span><nav class=mdl-navigation><a class=mdl-navigation__link href=/add/ >Add to Discord</a> <a class=mdl-navigation__link href=/help/ >Help and Support</a> <a class=mdl-navigation__link href=/commands/ >Commands</a> <a class="mdl-navigation__link is-active" href=#top>Guide</a></nav><nav class=mdl-navigation><a class=mdl-navigation__link href=/donate/ >Donate</a> <a class=mdl-navigation__link href=/faq/ >F.A.Q.</a></nav></div><main class=mdl-layout__content><div class=mdl-grid><div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet"><div class=mdl-grid><div id=step1 class="mdl-cell mdl-cell--12-col"><h4>1. Create a Discord Bot Application</h4><p>Go to <a class=mdl-link href=https://discordapp.com/developers/applications/me target=_blank>Discord Developer Applications Page</a>.<p>Log in with your Discord account.<p>Click on the + New App button.<p>Fill in the App Name (i.e., your bot's name), add an optional Avatar and Description for your bot.<p>Click on the Create App button.<p>Click on Create a Bot User button and confirm that you want to add a bot to this app.</p><img src=/assets/images/install_step1.gif height=auto width=100%></div><div id=step2 class="mdl-cell mdl-cell--12-col"><h4>2. Invite your Bot to Discord</h4><p>Copy your Bot's <b>Client ID</b> from your <a class=mdl-link href=https://discordapp.com/developers/applications/me target=_blank>Discord Applications</a> page.<div><p>Paste your <b>Client ID</b> here and click on <strong>Invite</strong> button, to invite your Bot to the server.<div><div class="mdl-textfield mdl-js-textfield"><input id=clientID class=mdl-textfield__input pattern=-?[0-9]*(\.[0-9]+)? onkeyup=invLink(this) required><label class=mdl-textfield__label for=clientID>267035345537728512</label><span class=mdl-textfield__error>Input is not a valid Client ID!</span></div><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick=openInvLink(this)>Invite</button><script>function invLink() {
+<!doctype html>
+<html lang="" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Read how to install, setup and configure Bastion Bot and make your Discord Server AWESOME!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Installation Guide | Bastion</title>
+
+    <meta property="og:title" content="Installation Guide">
+    <meta property="og:description" content="Read how to install, setup and configure Bastion Bot and make your Discord Server AWESOME!">
+    <meta property="og:url" content="https://bastionbot.org/guide">
+    <meta property="og:image" content="https://bastionbot.org/assets/images/BastionLogo_Text_Black.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bastion">
+
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Bastion">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Bastion">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://bastionbot.org/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#B3E3DE">
+    <meta name="theme-color" content="#111111">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- Material Design icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Your styles -->
+    <link rel="stylesheet" href="/styles/main.css">
+  </head>
+  <body id="top">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout-icon"></div>
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <a href="/"><span id="header-logo" class="mdl-layout-title"><img src="/assets/images/BastionLogo_Text_White.png" height="35" width="auto" /></span></a>
+          <div class="mdl-tooltip mdl-tooltip--large" data-mdl-for="header-logo">Lovingly Designed &amp; Developed by @k3rn31p4nic</div>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="/donate/">Donate</a>
+            <a class="mdl-navigation__link" href="https://discord.gg/fzx8fkt">Join Discord</a>
+            <a href="/add/"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Add to Discord</button></a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"><img src="/assets/images/BastionLogo_Text_Black.png" alt="Bastion" height="35" width="auto" /></span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="/add/">Add to Discord</a>
+          <a class="mdl-navigation__link" href="/help/">Help and Support</a>
+          <a class="mdl-navigation__link" href="/commands/">Commands</a>
+          <a class="mdl-navigation__link is-active" href="#top">Guide</a>
+        </nav>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="/donate/">Donate</a>
+          <a class="mdl-navigation__link" href="/faq/">F.A.Q.</a>
+        </nav>
+      </div>
+
+      <main class="mdl-layout__content">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--9-col mdl-cell--6-col-tablet">
+            <div class="mdl-grid">
+              <div id="step1" class="mdl-cell mdl-cell--12-col">
+                <h4>1. Create a Discord Bot Application</h4>
+                    <p>
+                      Go to <a class="mdl-link" href="https://discordapp.com/developers/applications/me" target="_blank">Discord Developer Applications Page</a>.
+                    </p>
+                    <p>
+                      Log in with your Discord account.
+                    </p>
+                    <p>
+                      Click on the + New App button.
+                    </p>
+                    <p>
+                      Fill in the App Name (i.e., your bot's name), add an optional Avatar and Description for your bot.
+                    </p>
+                    <p>
+                      Click on the Create App button.
+                    </p>
+                    <p>
+                      Click on Create a Bot User button and confirm that you want to add a bot to this app.
+                    </p>
+                    <img src="/assets/images/install_step1.gif" height="auto" width="100%" />
+              </div>
+
+              <div id="step2" class="mdl-cell mdl-cell--12-col">
+                <h4>2. Invite your Bot to Discord</h4>
+                <p>
+                  Copy your Bot's <b>Client ID</b> from your <a class="mdl-link" href="https://discordapp.com/developers/applications/me" target="_blank">Discord Applications</a> page.
+                </p>
+                <div>
+                  <p>
+                    Paste your <b>Client ID</b> here and click on <strong>Invite</strong> button, to invite your Bot to the server.
+                  </p>
+                  <div>
+                    <div class="mdl-textfield mdl-js-textfield">
+                      <input id="clientID" class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" onkeyup="invLink(this)" required />
+                      <label class="mdl-textfield__label" for="clientID">267035345537728512</label>
+                      <span class="mdl-textfield__error">Input is not a valid Client ID!</span>
+                    </div>
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="openInvLink(this)">Invite</button>
+                    <script>
+                      function invLink() {
                         let INSERT_CLIENT_ID_HERE = document.getElementById('clientID').value;
                         document.getElementById('inviteLink').innerHTML = `https://discordapp.com/oauth2/authorize?client_id=${INSERT_CLIENT_ID_HERE}&scope=bot&permissions=2146958463`;
                       }
@@ -6,4 +124,345 @@
                         let INSERT_CLIENT_ID_HERE = document.getElementById('clientID').value;
                         let url = `https://discordapp.com/oauth2/authorize?client_id=${INSERT_CLIENT_ID_HERE}&scope=bot&permissions=2146958463`;
                         window.open(url)
-                      }</script></div><pre><code class=force-select id=inviteLink>https://discordapp.com/oauth2/authorize?client_id=INSERT_CLIENT_ID_HERE&amp;scope=bot&amp;permissions=2146958591</code></pre></div></div><div id=step3 class="mdl-cell mdl-cell--12-col"><h4>3. Get API Keys</h4><div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect"><div class=mdl-tabs__tab-bar><a href=#google class="mdl-tabs__tab is-active">Google API</a> <a href=#cleverbot class=mdl-tabs__tab>Cleverbot API</a> <a href=#trn-pubg class=mdl-tabs__tab>PUBG API</a> <a href=#hirez class=mdl-tabs__tab>HiRez API</a> <a href=#twitch class=mdl-tabs__tab>Twitch API</a> <a href=#tmdb class=mdl-tabs__tab>The Movie DB API</a></div><div id=google class="mdl-tabs__panel is-active"><div class="mdl-message mdl-message__info"><div class=mdl-message__title>Optional</div><div class=mdl-message__content>This is only required for <code>map</code> and <code>shorten</code> commands. If you do not wish to use those commands, yet, you can skip this part and can come back here later when you want these.</div></div><p>Go to the <a class=mdl-link href=https://console.developers.google.com/ target=_blank>Google API Console</a>.<p>Create a new project, name it anything you like. Once the project is created, click on Enable APIs.<p>Now, enable Google Static Maps API and URL Shortener API.<p>On the left tab, click Credentials. Then click Create Credentials button. Now click on API Key. A window will popup with your Google API key.<p>Keep this page open, or copy your API Key, as you are going to need this during the BOT installation.</div><div id=cleverbot class=mdl-tabs__panel><div class="mdl-message mdl-message__info"><div class=mdl-message__title>Optional</div><div class=mdl-message__content>This is only required if you want to chat with Bastion. If you do not wish to use these feature, yet, you can skip this part and can come back here later when you want these.</div></div><div><p>Go to the <a class=mdl-link href=https://www.cleverbot.com/api target=_blank>Cleverbot API site</a>.<p>Select a API Pack as per your requirements. Click on Add to Cart / Sign up now.<p>Input your details as mentioned. After you complete the signup, you will receive an email to verify your account. After you verify login to your account using the email &amp; password you had selected during signup.<p>After you are successfully logged in to your account, you will see your API Key in My Accounds section.<p>Keep this page open, or copy your API Key, as you are going to need this during the BOT installation.</div></div><div id=trn-pubg class=mdl-tabs__panel><div class="mdl-message mdl-message__info"><div class=mdl-message__title>Optional</div><div class=mdl-message__content>This is only required for <code>pubg</code> command. If you do not wish to use this command, yet, you can skip this part and can come back here later when you want this.</div></div><p>Go to <a class=mdl-link href=https://pubgtracker.com/site-api target=_blank>PlayerUnknown's Battlegrounds Tracer Network Site</a>.<p>Login/Register your account (Click Login/Register at the top right corner).<p>After you've (registered and) logged in, click on Generate API key.<p>Fill up the given form with your name, email, website (you can also use https://bastion.js.org) and description. After that click on Generate API key.<br>Then you'll see your API Key under the Authentication section.<br>Someting like: <code>845835a1-5xr3-8642-0915-18104fa12c1f</code><p>Keep this page open, or copy your API Key, as you are going to need this during the BOT installation.</div><div id=hirez class=mdl-tabs__panel><div class="mdl-message mdl-message__info"><div class=mdl-message__title>Optional</div><div class=mdl-message__content>This is only required for <code>paladins</code> command. If you do not wish to use this command, yet, you can skip this part and can come back here later when you want this.</div></div><p>Fill up the <a class=mdl-link href=https://fs12.formsite.com/HiRez/form48/secure_index.html target=_blank>Hi-Rez Developer Credentials Application Form</a> with correct details.<p>Then submit it. After HiRez Studios have verified you, they will mail you with your HiRez DevId &amp; AuthKey.<div class="mdl-message mdl-message__info"><div class=mdl-message__content>It generally takes few hours, so you can proceed with the installation, as you can add these to your <code>credentials.json</code> file anytime later. See <a class=mdl-link href=/faq/#configuration>Configuration FAQ</a> on how to do that.</div></div></div><div id=twitch class=mdl-tabs__panel><div class="mdl-message mdl-message__info"><div class=mdl-message__title>Optional</div><div class=mdl-message__content>This is only required for <code>twitch</code> command. If you do not wish to use this command, yet, you can skip this part and can come back here later when you want this.</div></div><p>Read this article on How to get <a class=mdl-link href=https://dev.twitch.tv/docs/v5/guides/authentication/#registration target=_blank>Twitch API Client ID &amp; Client Secret</a>.<p>Keep this page open, or copy your Client ID &amp; Client Secret somewhere safe, as you are going to need this during the BOT installation.</div><div id=tmdb class=mdl-tabs__panel><div class="mdl-message mdl-message__info"><div class=mdl-message__title>Optional</div><div class=mdl-message__content>This is only required for <code>movie</code> and <code>tvShow</code> commands. If you do not wish to use these commands, yet, you can skip this part and can come back here later when you want this.</div></div><p>Read <a class=mdl-link href=https://www.themoviedb.org/faq/api target=_blank>The Movie Database FAQ</a> to know how to get their API Key.<p>Keep this page open, or copy your API Key somewhere safe, as you are going to need this during the BOT installation.</div></div></div><div id=step4 class="mdl-cell mdl-cell--12-col"><h4>4. Install Bastion</h4><div class="mdl-message mdl-message__info"><div class=mdl-message__title>Want to run Bastion 24/7?</div><div class=mdl-message__content>If you want Bastion to server 24/7 without having to hosting it on your PC and want to keep it cheap, reliable and convenient as possible, you can install Bastion, using following guide, on a Digital Ocean Linux VPS using this link (using this link will be supporting Bastion and will give you $10 credit for free).</div></div><div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect"><div class=mdl-tabs__tab-bar><a href=#gnu class="mdl-tabs__tab is-active">GNU/Linux</a> <a href=#macOS class=mdl-tabs__tab>macOS</a> <a href=#win class=mdl-tabs__tab>Windows</a></div><div id=gnu class="mdl-tabs__panel is-active"><div><h5>a. Download the Installer</h5><p>In the terminal, run:<pre><code class=force-select>wget https://github.com/snkrsnkampa/Bastion-Scripts/raw/master/BastionInstaller.sh &amp;&amp; chmod +x BastionInstaller.sh</code></pre></div><div><h5>b. Install Bastion</h5><p>The installer you downloaded for your distro will automatically download and install everything you'll need to run Bastion Bot.<p>To start the installer, run:<pre><code class=force-select>./BastionInstaller.sh</code></pre><p>Wait a while for Bastion installer to finish installing.<p>You should now have a new folder named Bastion in your <code>HOME</code> (<code>~</code>) directory.</div><div><h5>c. Configuration</h5><p>If you didn't set up Bot ID, Bot Token, Owner ID, API Keys, Command Prefix, Bot Status &amp; Bot Game during Bot Installation, this is the time to set that up. Read the <a class=mdl-link href=https://bastion.js.org/faq/#configuration>Configuration section in F.A.Q.</a> to know how to do that.</div><div><h5>d. Run Bastion</h5><p>Assuming you are still inside <code>Bastion</code> directory, in you Terminal, run:<pre><code class=force-select>./run.sh</code></pre></div></div><div id=macOS class=mdl-tabs__panel><div><h5>a. Download the Installer</h5><p>In the terminal, run:<pre><code class=force-select>curl -sL https://github.com/snkrsnkampa/Bastion-Scripts/raw/master/BastionInstaller_macOS.sh -o BastionInstaller.sh &amp;&amp; chmod +x BastionInstaller.sh</code></pre></div><div><h5>b. Install Bastion</h5><p>The installer you downloaded for your distro will automatically download and install everything you'll need to run Bastion Bot.<p>To start the installer, run:<pre><code class=force-select>./BastionInstaller.sh</code></pre><p>Wait a while for Bastion installer to finish installing.<p>You should now have a new folder named Bastion in your <code>HOME</code> (<code>~</code>) directory.</div><div><h5>c. Configuration</h5><p>If you didn't set up Bot ID, Bot Token, Owner ID, API Keys, Command Prefix, Bot Status &amp; Bot Game during Bot Installation, this is the time to set that up. Read the <a class=mdl-link href=https://bastion.js.org/faq/#configuration>Configuration section in F.A.Q.</a> to know how to do that.</div><div><h5>d. Run Bastion</h5><p>Assuming you are still inside <code>Bastion</code> directory, in you Terminal, run:<pre><code class=force-select>./run.sh</code></pre></div></div><div id=win class=mdl-tabs__panel><div><h5>a. Install NodeJS</h5><p>Visit <a class=mdl-link href=https://nodejs.org/en/download/current/ target=_blank>NodeJS Website</a> and download NodeJS Windows Installer &amp; install it.</div><div><h5>b. Install Git</h5><p>Visit <a class=mdl-link href=https://git-scm.com/download/win target=_blank>Git Website</a> to download Git for Windows &amp; install it.</div><div><h5>c. Install Bastion</h5><p><a href=https://github.com/snkrsnkampa/Bastion-Scripts/raw/master/BastionInstaller.cmd title="Bastion Installer for Windows">Right Click here</a> and Click Save Link As... and Save the file as BastionInstaller.cmd (Bastion Installer for Windows).<p>Right-Clict the downloaded file and Click Run as Administrator.<p>Wait a while for Bastion installer to finish installing.<p>You should now have a new folder named Bastion in your Windows Desktop.</div><div><h5>d. Configuration</h5><p>If you didn't set up Bot ID, Bot Token, Owner ID, API Keys, Command Prefix, Bot Status &amp; Bot Game during Bot Installation, this is the time to set that up. Read the <a class=mdl-link href=https://bastion.js.org/faq/#configuration>Configuration section in F.A.Q.</a> to know how to do that.</div><div><h5>e. Run Bastion</h5><p>Assuming you are still inside Bastion directory, Double-Click &amp; Open the file:<pre><code>run.cmd</code></pre><p>Now, you will see the status of Bastion Bot in a Command Prompt. If you want to terminate &amp; stop Bastion Bot, just close the Command Prompt window.</div></div></div></div><div id=step5 class="mdl-cell mdl-cell--12-col"><h4>5. Update Bastion</h4><div class="mdl-message mdl-message__info"><div class=mdl-message__content>Before updating your Bastion Bot, shutdown your bot using the <code>#!shutdown</code> command.<br><em>Assuming <code>#!</code> in your Discord Bot.</em></div></div><div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect"><div class=mdl-tabs__tab-bar><a href=#gnu class="mdl-tabs__tab is-active">GNU/Linux</a> <a href=#macOS class=mdl-tabs__tab>macOS</a> <a href=#win class=mdl-tabs__tab>Windows</a></div><div id=gnu class="mdl-tabs__panel is-active"><br><p>Go to your Bastion directory.<br>If you haven't changed the default installation directory and path, run:<pre><code class=force-select>cd ~/Bastion</code></pre><p>Then run:<pre><code class=force-select>sudo ./update.sh</code></pre><p>Wait for a while for the Bastion Updated to finish updating, it will tell you when it's update. Then you can run the bot, as usual, by typing:<pre><code class=force-select>./run.sh</code></pre></div><div id=macOS class=mdl-tabs__panel><br><p>Go to your Bastion directory.<br>If you haven't changed the default installation directory and path, run:<pre><code class=force-select>cd ~/Bastion</code></pre><p>Then run:<pre><code class=force-select>sudo ./update.sh</code></pre><p>Wait for a while for the Bastion Updated to finish updating, it will tell you when it's update. Then you can run the bot, as usual, by typing:<pre><code class=force-select>./run.sh</code></pre></div><div id=win class=mdl-tabs__panel><br><p>Open your Bastion directory (It's in your desktop, If you haven't changed the default installation directory and path).<p>Right-Click on the <code>update.cmd</code> file and Click Run as Administrator.<p>Wait for a while for the Bastion Updated to finish updating, it will tell you when it's update. Then you can run the bot, as usual, by opening the run.cmd file.</div></div></div></div></div><div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--hide-phone"><ul style=position:fixed><a href=#step1><li class=mdl-list__item>Create A Discord App</a><a href=#step2><li class=mdl-list__item>Invite Bot to Discord</a><a href=#step3><li class=mdl-list__item>Get API Keys</a><a href=#step4><li class=mdl-list__item>Install Bastion</a><a href=#step5><li class=mdl-list__item>Update Bastion</a></ul></div></div><footer class=mdl-mega-footer><div class=mdl-mega-footer__top-section><div class=mdl-mega-footer__right-section><a href=#top>Back to Top</a></div></div><div class=mdl-mega-footer--bottom-section><div class=mdl-logo>Lovingly Designed &amp; Developed by <a href=https://sankarsankampa.com title="Sankarsan Kampa" target=_blank>Sankarsan Kampa</a></div><ul class=mdl-mega-footer--link-list><li><a href=/contact/ >Contact</a><li><a href=/help/ >Help and Support</a></ul></div></footer></main></div><script src=../../scripts/main.min.js></script>
+                      }
+                    </script>
+                  </div>
+                  <pre><code class="force-select" id="inviteLink">https://discordapp.com/oauth2/authorize?client_id=INSERT_CLIENT_ID_HERE&amp;scope=bot&amp;permissions=2146958591</code></pre>
+                </div>
+              </div>
+
+              <div id="step3" class="mdl-cell mdl-cell--12-col">
+                <h4>3. Get API Keys</h4>
+                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                  <div class="mdl-tabs__tab-bar">
+                    <a href="#google" class="mdl-tabs__tab is-active">Google API</a>
+                    <a href="#cleverbot" class="mdl-tabs__tab">Cleverbot API</a>
+                    <a href="#trn-pubg" class="mdl-tabs__tab">PUBG API</a>
+                    <a href="#hirez" class="mdl-tabs__tab">HiRez API</a>
+                    <a href="#twitch" class="mdl-tabs__tab">Twitch API</a>
+                    <a href="#tmdb" class="mdl-tabs__tab">The Movie DB API</a>
+                  </div>
+
+                  <div id="google" class="mdl-tabs__panel is-active">
+                    <div class="mdl-message mdl-message__info">
+                      <div class="mdl-message__title">
+                        Optional
+                      </div>
+                      <div class="mdl-message__content">
+                        This is only required for <code>map</code> and <code>shorten</code> commands. If you do not wish to use those commands, yet, you can skip this part and can come back here later when you want these.
+                      </div>
+                    </div>
+                    <p>Go to the <a class="mdl-link" href="https://console.developers.google.com/" target="_blank">Google API Console</a>.</p>
+                    <p>Create a new project, name it anything you like. Once the project is created, click on Enable APIs.</p>
+                    <p>Now, enable Google Static Maps API and URL Shortener API.</p>
+                    <p>On the left tab, click Credentials. Then click Create Credentials button. Now click on API Key. A window will popup with your Google API key.</p>
+                    <p>Keep this page open, or copy your API Key, as you are going to need this during the BOT installation.</p>
+                  </div>
+
+                  <div id="cleverbot" class="mdl-tabs__panel">
+                    <div class="mdl-message mdl-message__info">
+                      <div class="mdl-message__title">
+                        Optional
+                      </div>
+                      <div class="mdl-message__content">
+                        This is only required if you want to chat with Bastion. If you do not wish to use these feature, yet, you can skip this part and can come back here later when you want these.
+                      </div>
+                    </div>
+                    <div>
+                      <p>Go to the <a class="mdl-link" href="https://www.cleverbot.com/api" target="_blank">Cleverbot API site</a>.</p>
+                      <p>Select a API Pack as per your requirements. Click on Add to Cart / Sign up now.</p>
+                      <p>Input your details as mentioned. After you complete the signup, you will receive an email to verify your account. After you verify login to your account using the email &amp; password you had selected during signup.</p>
+                      <p>After you are successfully logged in to your account, you will see your API Key in My Accounds section.</p>
+                      <p>Keep this page open, or copy your API Key, as you are going to need this during the BOT installation.</p>
+                    </div>
+                  </div>
+
+                  <div id="trn-pubg" class="mdl-tabs__panel">
+                    <div class="mdl-message mdl-message__info">
+                      <div class="mdl-message__title">
+                        Optional
+                      </div>
+                      <div class="mdl-message__content">
+                        This is only required for <code>pubg</code> command. If you do not wish to use this command, yet, you can skip this part and can come back here later when you want this.
+                      </div>
+                    </div>
+                    <p>Go to <a class="mdl-link" href="https://pubgtracker.com/site-api" target="_blank">PlayerUnknown's Battlegrounds Tracer Network Site</a>.</p>
+                    <p>Login/Register your account (Click Login/Register at the top right corner).</p>
+                    <p>After you've (registered and) logged in, click on Generate API key.</p>
+                    <p>Fill up the given form with your name, email, website (you can also use https://bastion.js.org) and description. After that click on Generate API key.
+                      <br>Then you'll see your API Key under the Authentication section.
+                      <br>Someting like: <code>845835a1-5xr3-8642-0915-18104fa12c1f</code>
+                    </p>
+                    <p>Keep this page open, or copy your API Key, as you are going to need this during the BOT installation.</p>
+                  </div>
+
+                  <div id="hirez" class="mdl-tabs__panel">
+                    <div class="mdl-message mdl-message__info">
+                      <div class="mdl-message__title">
+                        Optional
+                      </div>
+                      <div class="mdl-message__content">
+                        This is only required for <code>paladins</code> command. If you do not wish to use this command, yet, you can skip this part and can come back here later when you want this.
+                      </div>
+                    </div>
+                    <p>Fill up the <a class="mdl-link" href="https://fs12.formsite.com/HiRez/form48/secure_index.html" target="_blank">Hi-Rez Developer Credentials Application Form</a> with correct details.</p>
+                    <p>Then submit it. After HiRez Studios have verified you, they will mail you with your HiRez DevId &amp; AuthKey.</p>
+                    <div class="mdl-message mdl-message__info">
+                      <div class="mdl-message__content">
+                        It generally takes few hours, so you can proceed with the installation, as you can add these to your <code>credentials.json</code> file anytime later. See <a class="mdl-link" href="/faq/#configuration">Configuration FAQ</a> on how to do that.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="twitch" class="mdl-tabs__panel">
+                    <div class="mdl-message mdl-message__info">
+                      <div class="mdl-message__title">
+                        Optional
+                      </div>
+                      <div class="mdl-message__content">
+                        This is only required for <code>twitch</code> command. If you do not wish to use this command, yet, you can skip this part and can come back here later when you want this.
+                      </div>
+                    </div>
+                    <p>Read this article on How to get <a class="mdl-link" href="https://dev.twitch.tv/docs/v5/guides/authentication/#registration" target="_blank">Twitch API Client ID &amp; Client Secret</a>.</p>
+                    <p>Keep this page open, or copy your Client ID &amp; Client Secret somewhere safe, as you are going to need this during the BOT installation.</p>
+                  </div>
+
+                  <div id="tmdb" class="mdl-tabs__panel">
+                    <div class="mdl-message mdl-message__info">
+                      <div class="mdl-message__title">
+                        Optional
+                      </div>
+                      <div class="mdl-message__content">
+                        This is only required for <code>movie</code> and <code>tvShow</code> commands. If you do not wish to use these commands, yet, you can skip this part and can come back here later when you want this.
+                      </div>
+                    </div>
+                    <p>Read <a class="mdl-link" href="https://www.themoviedb.org/faq/api" target="_blank">The Movie Database FAQ</a> to know how to get their API Key.</p>
+                    <p>Keep this page open, or copy your API Key somewhere safe, as you are going to need this during the BOT installation.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="step4" class="mdl-cell mdl-cell--12-col">
+                <h4>4. Install Bastion</h4>
+                <div class="mdl-message mdl-message__info">
+                  <div class="mdl-message__title">
+                    Want to run Bastion 24/7?
+                  </div>
+                  <div class="mdl-message__content">
+                    If you want Bastion to server 24/7 without having to hosting it on your PC and want to keep it cheap, reliable and convenient as possible, you can install Bastion, using following guide, on a Digital Ocean Linux VPS using this link (using this link will be supporting Bastion and will give you $10 credit for free).
+                  </div>
+                </div>
+
+                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                  <div class="mdl-tabs__tab-bar">
+                      <a href="#gnu" class="mdl-tabs__tab is-active">GNU/Linux</a>
+                      <a href="#macOS" class="mdl-tabs__tab">macOS</a>
+                      <a href="#win" class="mdl-tabs__tab">Windows</a>
+                  </div>
+
+                  <div id="gnu" class="mdl-tabs__panel is-active">
+                    <div>
+                      <h5>a. Download the Installer</h5>
+                      <p>In the terminal, run:</p>
+                      <pre><code class="force-select">wget https://github.com/snkrsnkampa/Bastion-Scripts/raw/master/BastionInstaller.sh &amp;&amp; chmod +x BastionInstaller.sh</code></pre>
+                    </div>
+                    <div>
+                      <h5>b. Install Bastion</h5>
+                      <p>The installer you downloaded for your distro will automatically download and install everything you'll need to run Bastion Bot.</p>
+                      <p>To start the installer, run:</p>
+                      <pre><code class="force-select">./BastionInstaller.sh</code></pre>
+                      <p>Wait a while for Bastion installer to finish installing.</p>
+                      <p>You should now have a new folder named Bastion in your <code>HOME</code> (<code>~</code>) directory.</p>
+                    </div>
+                    <div>
+                      <h5>c. Configuration</h5>
+                      <p>If you didn't set up Bot ID, Bot Token, Owner ID, API Keys, Command Prefix, Bot Status &amp; Bot Game during Bot Installation, this is the time to set that up. Read the <a class="mdl-link" href="https://bastion.js.org/faq/#configuration">Configuration section in F.A.Q.</a> to know how to do that.</p>
+                    </div>
+                    <div>
+                      <h5>d. Run Bastion</h5>
+                      <p>Assuming you are still inside <code>Bastion</code> directory, in you Terminal, run:</p>
+                      <pre><code class="force-select">./run.sh</code></pre>
+                    </div>
+                  </div>
+
+                  <div id="macOS" class="mdl-tabs__panel">
+                    <div>
+                      <h5>a. Download the Installer</h5>
+                      <p>In the terminal, run:</p>
+                      <pre><code class="force-select">curl -sL https://github.com/snkrsnkampa/Bastion-Scripts/raw/master/BastionInstaller_macOS.sh -o BastionInstaller.sh &amp;&amp; chmod +x BastionInstaller.sh</code></pre>
+                    </div>
+                    <div>
+                      <h5>b. Install Bastion</h5>
+                      <p>The installer you downloaded for your distro will automatically download and install everything you'll need to run Bastion Bot.</p>
+                      <p>To start the installer, run:</p>
+                      <pre><code class="force-select">./BastionInstaller.sh</code></pre>
+                      <p>Wait a while for Bastion installer to finish installing.</p>
+                      <p>You should now have a new folder named Bastion in your <code>HOME</code> (<code>~</code>) directory.</p>
+                    </div>
+                    <div>
+                      <h5>c. Configuration</h5>
+                      <p>If you didn't set up Bot ID, Bot Token, Owner ID, API Keys, Command Prefix, Bot Status &amp; Bot Game during Bot Installation, this is the time to set that up. Read the <a class="mdl-link" href="https://bastion.js.org/faq/#configuration">Configuration section in F.A.Q.</a> to know how to do that.</p>
+                    </div>
+                    <div>
+                      <h5>d. Run Bastion</h5>
+                      <p>Assuming you are still inside <code>Bastion</code> directory, in you Terminal, run:</p>
+                      <pre><code class="force-select">./run.sh</code></pre>
+                    </div>
+                  </div>
+
+                  <div id="win" class="mdl-tabs__panel">
+                    <div>
+                      <h5>a. Install NodeJS</h5>
+                      <p>Visit <a class="mdl-link" href="https://nodejs.org/en/download/current/" target="_blank">NodeJS Website</a> and download NodeJS Windows Installer &amp; install it.</p>
+                    </div>
+                    <div>
+                      <h5>b. Install Git</h5>
+                      <p>Visit <a class="mdl-link" href="https://git-scm.com/download/win" target="_blank">Git Website</a> to download Git for Windows &amp; install it.</p>
+                    </div>
+                    <div>
+                      <h5>c. Install Bastion</h5>
+                      <p><a href="https://github.com/snkrsnkampa/Bastion-Scripts/raw/master/BastionInstaller.cmd" title="Bastion Installer for Windows">Right Click here</a> and Click Save Link As... and Save the file as BastionInstaller.cmd (Bastion Installer for Windows).</p>
+                      <p>Right-Clict the downloaded file and Click Run as Administrator.</p>
+                      <p>Wait a while for Bastion installer to finish installing.</p>
+                      <p>You should now have a new folder named Bastion in your Windows Desktop.</p>
+                    </div>
+                    <div>
+                      <h5>d. Configuration</h5>
+                      <p>If you didn't set up Bot ID, Bot Token, Owner ID, API Keys, Command Prefix, Bot Status &amp; Bot Game during Bot Installation, this is the time to set that up. Read the <a class="mdl-link" href="https://bastion.js.org/faq/#configuration">Configuration section in F.A.Q.</a> to know how to do that.</p>
+                    </div>
+                    <div>
+                      <h5>e. Run Bastion</h5>
+                      <p>Assuming you are still inside Bastion directory, Double-Click &amp; Open the file:</p>
+                      <pre><code>run.cmd</code></pre>
+                      <p>Now, you will see the status of Bastion Bot in a Command Prompt. If you want to terminate &amp; stop Bastion Bot, just close the Command Prompt window.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="step5" class="mdl-cell mdl-cell--12-col">
+                <h4>5. Update Bastion</h4>
+                <div class="mdl-message mdl-message__info">
+                  <div class="mdl-message__content">
+                    Before updating your Bastion Bot, shutdown your bot using the <code>#!shutdown</code> command.<br><em>Assuming <code>#!</code> in your Discord Bot.</em>
+                  </div>
+                </div>
+                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                  <div class="mdl-tabs__tab-bar">
+                      <a href="#gnu" class="mdl-tabs__tab is-active">GNU/Linux</a>
+                      <a href="#macOS" class="mdl-tabs__tab">macOS</a>
+                      <a href="#win" class="mdl-tabs__tab">Windows</a>
+                  </div>
+
+                  <div id="gnu" class="mdl-tabs__panel is-active">
+                    <br>
+                    <p>Go to your Bastion directory.<br>If you haven't changed the default installation directory and path, run:</p>
+                    <pre><code class="force-select">cd ~/Bastion</code></pre>
+                    <p>Then run:</p>
+                    <pre><code class="force-select">sudo ./update.sh</code></pre>
+                    <p>Wait for a while for the Bastion Updated to finish updating, it will tell you when it's update. Then you can run the bot, as usual, by typing:</p>
+                    <pre><code class="force-select">./run.sh</code></pre>
+                  </div>
+
+                  <div id="macOS" class="mdl-tabs__panel">
+                    <br>
+                    <p>Go to your Bastion directory.<br>If you haven't changed the default installation directory and path, run:</p>
+                    <pre><code class="force-select">cd ~/Bastion</code></pre>
+                    <p>Then run:</p>
+                    <pre><code class="force-select">sudo ./update.sh</code></pre>
+                    <p>Wait for a while for the Bastion Updated to finish updating, it will tell you when it's update. Then you can run the bot, as usual, by typing:</p>
+                    <pre><code class="force-select">./run.sh</code></pre>
+                  </div>
+
+                  <div id="win" class="mdl-tabs__panel">
+                    <br>
+                    <p>Open your Bastion directory (It's in your desktop, If you haven't changed the default installation directory and path).</p>
+                    <p>Right-Click on the <code>update.cmd</code> file and Click Run as Administrator.</p>
+                    <p>Wait for a while for the Bastion Updated to finish updating, it will tell you when it's update. Then you can run the bot, as usual, by opening the run.cmd file.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--2-col-tablet mdl-cell--hide-phone">
+            <ul style="position:fixed;">
+              <a href="#step1">
+                <li class="mdl-list__item">Create A Discord App</li>
+              </a>
+              <a href="#step2">
+                <li class="mdl-list__item">Invite Bot to Discord</li>
+              </a>
+              <a href="#step3">
+                <li class="mdl-list__item">Get API Keys</li>
+              </a>
+              <a href="#step4">
+                <li class="mdl-list__item">Install Bastion</li>
+              </a>
+              <a href="#step5">
+                <li class="mdl-list__item">Update Bastion</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+  
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer__top-section">
+<!--
+            <div class="mdl-mega-footer__left-section">
+              <button class="mdl-mega-footer__social-btn"></button>
+              <button class="mdl-mega-footer__social-btn"></button>
+              <button class="mdl-mega-footer__social-btn"></button>
+            </div>
+-->
+            <div class="mdl-mega-footer__right-section">
+              <a href="#top">Back to Top</a>
+            </div>
+          </div>
+<!--
+          <div class="mdl-mega-footer--middle-section">
+            <div class="mdl-mega-footer--drop-down-section">
+              <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer--heading">Title</h1>
+              <ul class="mdl-mega-footer--link-list">
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </div>
+          </div>
+-->
+          <div class="mdl-mega-footer--bottom-section">
+            <div class="mdl-logo">
+              Lovingly Designed &amp; Developed by <a href="https://sankarsankampa.com" title="Sankarsan Kampa" target="_blank">Sankarsan Kampa</a>
+            </div>
+            <ul class="mdl-mega-footer--link-list">
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/help/">Help and Support</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <!-- build:js(app/) ../../scripts/main.min.js -->
+    <script src="/styles/src/mdlComponentHandler.js"></script>
+    <script src="/styles/src/button/button.js"></script>
+    <script src="/styles/src/checkbox/checkbox.js"></script>
+    <script src="/styles/src/icon-toggle/icon-toggle.js"></script>
+    <script src="/styles/src/menu/menu.js"></script>
+    <script src="/styles/src/progress/progress.js"></script>
+    <script src="/styles/src/radio/radio.js"></script>
+    <script src="/styles/src/slider/slider.js"></script>
+    <script src="/styles/src/spinner/spinner.js"></script>
+    <script src="/styles/src/switch/switch.js"></script>
+    <script src="/styles/src/tabs/tabs.js"></script>
+    <script src="/styles/src/textfield/textfield.js"></script>
+    <script src="/styles/src/tooltip/tooltip.js"></script>
+    <script src="/styles/src/layout/layout.js"></script>
+    <script src="/styles/src/data-table/data-table.js"></script>
+    <script src="/styles/src/ripple/ripple.js"></script>
+    <script src="/scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
