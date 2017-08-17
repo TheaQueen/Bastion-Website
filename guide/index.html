@@ -78,25 +78,25 @@
             <div class="mdl-grid">
               <div id="step1" class="mdl-cell mdl-cell--12-col">
                 <h4>1. Create a Discord Bot Application</h4>
-                    <p>
-                      Go to <a class="mdl-link" href="https://discordapp.com/developers/applications/me" target="_blank">Discord Developer Applications Page</a>.
-                    </p>
-                    <p>
-                      Log in with your Discord account.
-                    </p>
-                    <p>
-                      Click on the + New App button.
-                    </p>
-                    <p>
-                      Fill in the App Name (i.e., your bot's name), add an optional Avatar and Description for your bot.
-                    </p>
-                    <p>
-                      Click on the Create App button.
-                    </p>
-                    <p>
-                      Click on Create a Bot User button and confirm that you want to add a bot to this app.
-                    </p>
-                    <img src="/assets/images/install_step1.gif" height="auto" width="100%" />
+                  <p>
+                    Go to <a class="mdl-link" href="https://discordapp.com/developers/applications/me" target="_blank">Discord Developer Applications Page</a>.
+                  </p>
+                  <p>
+                    Log in with your Discord account.
+                  </p>
+                  <p>
+                    Click on the + New App button.
+                  </p>
+                  <p>
+                    Fill in the App Name (i.e., your bot's name), add an optional Avatar and Description for your bot.
+                  </p>
+                  <p>
+                    Click on the Create App button.
+                  </p>
+                  <p>
+                    Click on Create a Bot User button and confirm that you want to add a bot to this app.
+                  </p>
+                  <img src="/assets/images/install_step1.gif" height="auto" width="100%" />
               </div>
 
               <div id="step2" class="mdl-cell mdl-cell--12-col">
@@ -281,7 +281,7 @@
                     <div>
                       <h5>d. Run Bastion</h5>
                       <p>Assuming you are still inside <code>Bastion</code> directory, in you Terminal, run:</p>
-                      <pre><code class="force-select">./bastion.sh start</code></pre>
+                      <pre><code class="force-select">./bastion.sh --start</code></pre>
                     </div>
                   </div>
 
@@ -306,32 +306,27 @@
                     <div>
                       <h5>d. Run Bastion</h5>
                       <p>Assuming you are still inside <code>Bastion</code> directory, in you Terminal, run:</p>
-                      <pre><code class="force-select">./bastion.sh start</code></pre>
+                      <pre><code class="force-select">./bastion.sh --start</code></pre>
                     </div>
                   </div>
 
                   <div id="win" class="mdl-tabs__panel">
                     <div>
-                      <h5>a. Install NodeJS</h5>
-                      <p>Visit <a class="mdl-link" href="https://nodejs.org/en/download/current/" target="_blank">NodeJS Website</a> and download NodeJS Windows Installer &amp; install it.</p>
-                    </div>
-                    <div>
-                      <h5>b. Install Git</h5>
-                      <p>Visit <a class="mdl-link" href="https://git-scm.com/download/win" target="_blank">Git Website</a> to download Git for Windows &amp; install it.</p>
-                    </div>
-                    <div>
-                      <h5>c. Install Bastion</h5>
+                      <h5>a. Download the Installer</h5>
                       <p><a href="https://raw.githubusercontent.com/TheBastionBot/Bastion-Scripts/master/BastionInstaller.cmd" title="Bastion Installer for Windows">Right Click here</a> and Click Save Link As... and Save the file as BastionInstaller.cmd (Bastion Installer for Windows).</p>
-                      <p>Right-Clict the downloaded file and Click Run as Administrator.</p>
+                    </div>
+                    <div>
+                      <h5>b. Install Bastion</h5>
+                      <p>Right-Click the downloaded file and Click Run as Administrator.</p>
                       <p>Wait a while for Bastion installer to finish installing.</p>
                       <p>You should now have a new folder named Bastion in your Windows Desktop.</p>
                     </div>
                     <div>
-                      <h5>d. Configuration</h5>
+                      <h5>c. Configuration</h5>
                       <p>If you didn't set up Bot ID, Bot Token, Owner ID, API Keys, Command Prefix, Bot Status &amp; Bot Game during Bot Installation, this is the time to set that up. Read the <a class="mdl-link" href="/faq/">Configuration section in F.A.Q.</a> to know how to do that.</p>
                     </div>
                     <div>
-                      <h5>e. Run Bastion</h5>
+                      <h5>d. Run Bastion</h5>
                       <p>Assuming you are still inside Bastion directory, Double-Click &amp; Open the file:</p>
                       <pre><code>run.cmd</code></pre>
                       <p>Now, you will see the status of Bastion Bot in a Command Prompt. If you want to terminate &amp; stop Bastion Bot, just close the Command Prompt window.</p>
@@ -359,9 +354,9 @@
                     <p>Go to your Bastion directory.<br>If you haven't changed the default installation directory and path, run:</p>
                     <pre><code class="force-select">cd ~/Bastion</code></pre>
                     <p>Then run:</p>
-                    <pre><code class="force-select">./bastion.sh update</code></pre>
+                    <pre><code class="force-select">./bastion.sh --update</code></pre>
                     <p>Wait for a while for the Bastion Updated to finish updating, it will tell you when it's update. Then you can run the bot, as usual, by typing:</p>
-                    <pre><code class="force-select">./bastion.sh start</code></pre>
+                    <pre><code class="force-select">./bastion.sh --start</code></pre>
                   </div>
 
                   <div id="macOS" class="mdl-tabs__panel">
@@ -369,9 +364,9 @@
                     <p>Go to your Bastion directory.<br>If you haven't changed the default installation directory and path, run:</p>
                     <pre><code class="force-select">cd ~/Bastion</code></pre>
                     <p>Then run:</p>
-                    <pre><code class="force-select">sudo ./bastion.sh update</code></pre>
+                    <pre><code class="force-select">sudo ./bastion.sh --update</code></pre>
                     <p>Wait for a while for the Bastion Updated to finish updating, it will tell you when it's update. Then you can run the bot, as usual, by typing:</p>
-                    <pre><code class="force-select">./bastion.sh start</code></pre>
+                    <pre><code class="force-select">./bastion.sh --start</code></pre>
                   </div>
 
                   <div id="win" class="mdl-tabs__panel">
