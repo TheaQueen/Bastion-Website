@@ -85,7 +85,7 @@
               let commands;
               let mdToHTML = new showdown.Converter();
               $.ajax({
-                url: 'https://raw.githubusercontent.com/snkrsnkampa/Bastion/master/languages/english/commandDescription.json',
+                url: 'https://bastionbot.org/commands/the/master/languages/english/commands.json',
                 dataType: 'json',
                 success: function(commands) {
                   let makeTag = function(openTag, closeTag) {
