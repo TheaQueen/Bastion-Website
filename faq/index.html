@@ -143,6 +143,26 @@
                 <p>To get a complete list of all the commands, run the <code>commands</code> command (using the appropriate prefix of Bastion in the Discord Server) in any Discord Server where the Bastion Bot is present or see it <a class="mdl-link" href="/commands/">here</a>.</p>
                 <h5>How do I know how to use a specific command?</h5>
                 <p>To get help on the usage &amp; examples of a any command, run the <code>help &lt;command&gt;</code> command (using the appropriate prefix of Bastion in the Discord Server) in any Discord Server where the Bastion Bot is present or see it <a class="mdl-link" href="/commands/">here</a>.</p>
+                <h5>How do I disable/enable only some specific commands/modules in a channel?</h5>
+                <p>Since Bastion <code>v5.2</code> you can enable/disable specific commands/modules in a channel. And the best part about that is you don't need to use any commands to do that. All you need to do is add a special meta data to the channel's topic in which you want to enable/disable the commands/modules.</p>
+                <p>Edit the channel topic, and at the <strong>very end</strong> (not even a new lines after the syntax), specifiy what you want to enable/disable in the following format:</p>
+                <p>
+                  <code>BOT_ID:enableCommands:command1 command2</code> - If you only want to enalbe the specified commands in the channel.
+                  <br><code>BOT_ID:disableCommands:command1 command2</code> - If you only want to disable the specified commands in the channel.
+                  <br><code>BOT_ID:enableModules:module1 module2</code> - If you only want to enalbe the specified modules in the channel.
+                  <br><code>BOT_ID:disableModules:module1 module2</code> - If you only want to disable the specified modules in the channel.
+                </p>
+                <div class="mdl-message mdl-message__info">
+                  <div class="mdl-message__title">
+                    Usage Note
+                  </div>
+                  <div class="mdl-message__content">
+                    Replace <code>BOT_ID</code> with the ID of Bastion (If you are using the Public Bastion, the ID is: <code>267035345537728512</code>).
+                    <br>Replace command1, command2, etc. with the name of the commands and module1, module2, etc with the name of the modules (as requiered).
+                    <br>Seperate multiple command/module names with a space.
+                    <br>You can only use one of the above 4 syntax in a single channel.
+                  </div>
+                </div>
                 <h5>What are the variables that I can use in greeting message, farewell message, triggers' responses, etc.?</h5>
                 <p>You can use the following variables:</p>
                 <p><code class="force-select">$user</code> - Mentions the user that triggered this event.
