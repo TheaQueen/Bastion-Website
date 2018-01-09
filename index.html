@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noodp">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Bastion Discord Bot</title>
+  <meta name="description" content="Add Bastion Bot to Discord and give awesome perks to your server!">
+  <link rel="shortcut icon" href="https://bastionbot.org/favicon.ico" type="image/x-icon">
+  <!-- Stylesheets -->
+  <link href="/assets/stylesheet/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+</head>
+<body>
+  <main id="top">
+    <div id="back-to-top" onMouseOver="showBTTToolbar()" onMouseOut="hideBTTToolbar()" hidden><span id="back-to-top-text" hidden>Back to top</span><a href="#top"><button class="black icon up"></button></a></div>
+    <header>
+      <div class="innerHeader">
+        <div class="headerLogo" onclick="updatePage(this.attributes['link-section'].value)" link-section="hero"></div>
+        <div class="menuIcon" onclick="toggleNav()"></div>
+        <nav hidden>
+          <div class="headerNav">
+            <ul class="mainNav">
+              <li><a onclick="updatePage(this.attributes['link-section'].value)" link-section="hero">Home</a></li>
+              <!-- <li><a onclick="updatePage(this.attributes['link-section'].value)" link-section="features">Features</a></li> -->
+              <li><a onclick="updatePage(this.attributes['link-section'].value)" link-section="commands">Commands</a></li>
+              <li><a href="https://docs.bastionbot.org" target="_blank">Guide</a></li>
+              <li><a href="https://discord.gg/fzx8fkt" target="_blank">Help &amp; Support</a></li>
+              <li onMouseOver="showInnerNav()" onMouseOut="hideInnerNav()">
+                <a class="headerNavMore">More&ensp;<img src="/assets/image/dropdown.svg" /></a>
+                <ul id="headerNavInner" class="innerNav">
+                  <!-- <li class="innerNavItem"><a onclick="updatePage(this.attributes['link-section'].value)" link-section="faq">FAQ</a></li> -->
+                  <li class="innerNavItem"><a onclick="updatePage(this.attributes['link-section'].value)" link-section="tools">Tools</a></li>
+                  <li class="innerNavItem"><a href="https://dev.bastionbot.org" target="_blank">Developers</a></li>
+                  <li class="innerNavItem"><a href="https://i18n.bastionbot.org" target="_blank">Translators</a></li>
+                  <li class="innerNavItem"><a onclick="updatePage(this.attributes['link-section'].value)" link-section="sponsors">Sponsors</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="headerNavRight">
+            <ul>
+              <li><a href="https://discord.gg/fzx8fkt" target="_blank">Join Discord</a></li>
+              <li><a onclick="updatePage(this.attributes['link-section'].value)" link-section="add">Add to Discord</a></li>
+              <li><a class="button" onclick="updatePage(this.attributes['link-section'].value)" link-section="donate">Donate</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <container>
+      <section id="hero">
+        <!-- <svg class="hero-t" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+          <path fill="none" stroke="#FAFAFA" stroke-width="8" d="M4 34h29.72L19 4z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg class="hero-c" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+          <path fill="none" stroke="#FAFAFA" stroke-width="8" d="M19 4C10.729 4 4 10.729 4 19s6.729 15 15 15 15-6.729 15-15S27.271 4 19 4z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg class="hero-x" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+          <path fill="none" stroke="#FAFAFA" stroke-width="8" d="M34 4L4 33.8M4 4l30 29.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg class="hero-s" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+          <path fill="none" stroke="#FAFAFA" stroke-width="8" d="M4 34h30V4H4z" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg> -->
+        <div class="hero-container">
+          <img id="main-logo" src="/assets/image/BastionText2.png" height="176" width="1024" onMouseOver="this.src='/assets/image/BastionText3.png'" onMouseOut="this.src='/assets/image/BastionText2.png'" />
+          <h2 id="tagline">Give awesome perks to your Discord server!</h2>
+          <a onclick="updatePage(this.attributes['link-section'].value)" link-section="add"><button class="primary" onMouseOver="taglineHighlight(1)" onmouseout="taglineHighlight(0)">Add Bastion to Discord</button></a>
+          <a href="https://discord.gg/fzx8fkt" target="_blank"><button onMouseOver="taglineJoin()" onmouseout="taglineAdd()">Join our Discord server</button></a>
+        </div> <!-- .hero-container -->
+      </section> <!-- #hero -->
+
+      <section id="commands" hidden>
+        <div class="commands-container">
+          <table class="cmd-table" border="0"></table>
+        </div> <!-- .commands-container -->
+      </section> <!-- #commands -->
+
+      <section id="tools" hidden>
+        <div class="header">
+          <h1>Tools</h1>
+          <p>Some very useful tools that can be used with Bastion.</p>
+        </div>
+        <!-- <svg class="header-seperator" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+          <path d="M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z" fill="currentColor"></path>
+        </svg> -->
+        <div class="tools-container">
+          <div class="tool-section">
+            <a href="https://bastionbot.org/embedbuilder">
+              <h4>Embed Builder</h4>
+              <p>Build embed JSON to use with commands like <code class="dark">sendEmbed</code>, etc.</p>
+              <button class="black icon next"></button>
+            </a>
+          </div>
+        </div> <!-- .tools-container -->
+      </section> <!-- #tools -->
+
+      <section id="sponsors" hidden>
+        <div class="header">
+          <h1>Sponsors</h1>
+          <p>These are the amazing companies and people who sponsor <strong>The Bastion Bot Project</strong> and keep us running.</p>
+        </div>
+        <div class="sponsors-container">
+          <div class="sponsor-section">
+            <a href="https://m.do.co/c/0ee6cb9c7ee0" target="_blank">
+              <img src="/assets/image/DO_Logo_Vertical_Blue.png" alt="DigitalOcean Logo" />
+              <p>DigitalOcean is a simple and robust cloud computing platform, designed for developers.</p>
+              <button class="black icon next"></button>
+            </a>
+          </div>
+        </div> <!-- .sponsors-container -->
+      </section> <!-- #sponsors -->
+
+      <section id="add" hidden>
+        <div class="header">
+          <h1>Add Bastion to Discord</h1>
+          <p>Add Bastion to Discord, and give awesome perks to your Discord server.</p>
+          <p>You've two different options here, you can either add the public Bastion bot to your Discord server.<br />Or you can choose to host Bastion yourself, privately, on your own machine/server and be your own boss.</p>
+        </div>
+        <div class="add-container">
+          <div class="add-section">
+            <a href="https://discordapp.com/oauth2/authorize?client_id=267035345537728512&scope=bot&permissions=2146958463" target="_blank">
+              <h4>I'll add the public Bastion</h4>
+              <button class="black">Add to Discord&ensp;<img src="/assets/image/arrow_right.png" width="16" height="16" /></button>
+              <p>Music is disabled in the public Bastion due to hosting &amp; maintenace cost for so many Discord servers.</p>
+            </a>
+          </div>
+          <div class="add-section">
+            <a href="https://docs.bastionbot.org" target="_blank">
+              <h4>I'll host Bastion</h4>
+              <button class="black">Read installation guide&ensp;<img src="/assets/image/arrow_right.png" width="16" height="16" /></button>
+              <p>You get to experience the the every features of Bastion; play high quality music, configure it the way you want, custom avatar, username. Whole set of bot owner only commands at the press of your keyboard.</p>
+            </a>
+          </div>
+        </div> <!-- .sponsors-container -->
+      </section> <!-- #sponsors -->
+
+      <section id="donate" hidden>
+        <div class="header">
+          <h1>Donate to Bastion</h1>
+          <p>Support the developement of Bastion and keep it running forever by donating us.</p>
+        </div>
+        <div class="donate-container" style="text-align:center;">
+          <p>Your donations will ensure the development of <a href="https://github.com/TheBastionBot" target="_blank">The Bastion Bot Project</a> and I'll make sure this project stays active forever.</p>
+          <p>You can donate via <a href="https://patreon.com/snkrsnkampa" target="_blank">Patreon</a> or <a href="https://paypal.me/snkrsnkampa" target="_blank">PayPal</a>.</p>
+          <p>You get a special role in Bastion Discord Server and a super special profile badge to show your pride.</p>
+        </div> <!-- .sponsors-container -->
+      </section> <!-- #sponsors -->
+
+      <section id="e404" hidden>
+        <div class="e404-container">
+          <h2>You look lost my friend.</h2>
+          <p>Let's head back <a onclick="updatePage(this.attributes['link-section'].value)" link-section="hero">home</a>.</p>
+        </div> <!-- .sponsors-container -->
+      </section> <!-- #sponsors -->
+    </container>
+
+    <footer>
+      <svg id="footer-background" preserveAspectRatio="none" viewBox="0 0 1920 330" version="1.1">
+        <path fill="#202225" fill-opacity="0.3" d="M140.881198,194.260295 C257.600568,129.32862 342.939626,119.84993 418.009939,203.154617 C493.080251,286.459305 545.728689,70.9046172 636.439626,63.9593047 C727.150564,57.0139922 768.99822,139.670242 858.802907,119.431961 C948.607595,99.1936797 1071.91228,-32.9977266 1243.91228,7.75227342 C1415.91228,48.5022734 1404.10369,208.584305 1508.27166,178.709305 C1612.43963,148.834305 1633.73291,79.913472 1711.63588,98.8569055 C1776.28676,114.577866 1819.96778,221.391836 1889.37253,185.808108 C2017.32661,120.206212 2004.01952,336.769569 2004.01952,336.769569 L271.635881,337 L-149.063338,337 C-149.063338,337 -245.850307,175.637635 -58.0633382,228.867188 C33.8652851,254.92501 64.1722713,236.933925 140.881198,194.260295 Z"></path>
+      </svg>
+      <div id="footer-content">
+        <div class="nav">
+          <div class="nav-section">
+            <p>Resources</p>
+            <a href="https://docs.bastionbot.org" target="_blank">Installation Guide</a>
+            <a href="https://discord.gg/fzx8fkt" target="_blank">Help &amp; Support</a>
+            <a onclick="updatePage(this.attributes['link-section'].value)" link-section="tools">Tools</a>
+            <!-- <a onclick="updatePage(this.attributes['link-section'].value)" link-section="faq">FAQ</a> -->
+          </div>
+          <div class="nav-section">
+            <p>Supporters</p>
+            <a onclick="updatePage(this.attributes['link-section'].value)" link-section="sponsors">Sponsors</a>
+            <a href="https://dev.bastionbot.org" target="_blank">Developers</a>
+            <a href="https://i18n.bastionbot.org" target="_blank">Translators</a>
+          </div>
+          <div class="nav-section">
+            <p>Social</p>
+            <a href="https://discord.gg/fzx8fkt" target="_blank">Discord</a>
+            <a href="https://github.com/TheBastionBot" target="_blank">GitHub</a>
+            <a href="https://twitter.com/TheBastionBot" target="_blank">Twitter</a>
+          </div>
+          <div class="nav-section">
+            <p>Donate</p>
+            <a href="https://paypal.me/snkrsnkampa" target="_blank">PayPal</a>
+            <a href="https://patreon.com/snkrsnkampa" target="_blank">Patreon</a>
+          </div>
+        </div>
+        <div id="footer-separator"></div>
+        <div class="meta">
+          <div class="copyright">
+            Copyright &copy; 2017-2018 - The Bastion Bot Project
+          </div>
+          <div class="links">
+            <a></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/showdown@1/dist/showdown.min.js"></script>
+  <script src="/assets/javascript/main.js"></script>
+</body>
+</html>
