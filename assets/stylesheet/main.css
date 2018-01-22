@@ -341,6 +341,14 @@ header ul li a {
 #commands .commands-container {
   margin: 0 auto;
   max-width: 1000px;
+  padding: 10px;
+  border-radius: 3px;
+  border-left: 5px solid #b5e2dd;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+  background-color: #23272A;
+}
+#commands .commands-container .cmd-table {
+  margin: 10px 0 0 0;
 }
 #commands .commands-container .cmd-table h2 {
   font-weight: 400;
@@ -349,6 +357,107 @@ header ul li a {
 }
 #commands .commands-container .cmd-table td {
   color: #EEE;
+}
+#commands .commands-container .cmd-table th { 
+  text-align: left;
+} 
+#commands .commands-container #commandsSearch {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+#commands .commands-container .bottom {
+  overflow: auto;
+  color: hsla(0,0%,100%,.6);
+  font-size: 14px;
+  padding: 10px 0 0 0;
+}
+#commands .commands-container .bottom .dataTables_info {
+  float: left;
+  padding: 10px 0;
+}
+#commands .commands-container .bottom .dataTables_paginate {
+  float: right;
+}
+.dataTables_paginate .paginate_button, .dataTables_paginate .ellipsis {
+  display: inline-block;
+  padding: 8px 0;
+  min-width: 32px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #24272b;
+  vertical-align: middle;
+  text-align: center;
+  opacity: 0.8;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+.dataTables_paginate .paginate_button:hover, .dataTables_paginate .ellipsis:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 15px rgba(0,0,0,.3);
+}
+.dataTables_paginate .current {
+  opacity: 1;
+  background-color: #b8e2dd;
+  color: black;
+}
+input[type='text'], input[type='url'], input[type='number'], textarea {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #111111;
+  border-radius: 3px;
+  background-color: #18191C;
+  color: #F5F5F5;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  resize: vertical;
+}
+input[type='text'], input[type='url'], input[type='number'], textarea {
+  outline: none;
+}
+/* This query will take effect for any screen smaller than 760px and also iPads specifically. */
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  #commands table,
+  #commands tbody,
+  #commands tr {
+    display: block;
+  }
+  #commands thead {
+    display: none;
+  }
+  #commands tr {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    margin: 0 0 20px 0;
+  }
+  #commands td {
+    border: none;
+    position: relative;
+  }
+  .dataTables_paginate .paginate_button,
+  .dataTables_paginate .ellipsis {
+    margin: 0 5px 5px 0;
+  }
+  #commands .commands-container .bottom .dataTables_paginate {
+    float: left;
+    margin-top: 10px;
+  }
+  td:nth-of-type(1) {
+    display: inline-block;
+    width: auto;
+    float: right;
+  }
+  td:nth-of-type(2) {
+    display: inline-block;
+    width: auto;
+    float: left;
+  }
+  td:nth-of-type(3) {
+    display: block;
+    width: 100%;
+    overflow: auto;
+  }
 }
 
 
