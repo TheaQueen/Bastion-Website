@@ -98,7 +98,6 @@ function taglineAdd() {
  */
 let commands;
 let mdToHTML = new showdown.Converter();
-
 $.ajax({
   url: 'https://raw.githubusercontent.com/TheBastionBot/Bastion/master/locales/en/modules.json',
   dataType: 'json',
