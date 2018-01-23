@@ -120,7 +120,7 @@ $.ajax({
     function insertBasicTable(data, id) {
       $('.cmd-table').append(
           Object.keys(data).reduce(function(o, n) {
-            return o + tr(td(id.charAt(0).toUpperCase() + id.replace(/_/, ' ').slice(1)) + '' + td(`<code>${n}</code>`) + '' + td(mdToHTML.makeHtml(data[n]) + ''));
+            return o + tr(td(`<code>${n}</code>`) + '' + td(id.charAt(0).toUpperCase() + id.replace(/_/, ' ').slice(1)) + '' + td(mdToHTML.makeHtml(data[n]) + ''));
           }, '')
       );
     };
@@ -143,8 +143,8 @@ function setupDataTable() {
       oPaginate: {
         sFirst: "←",
         sPrevious: "←",
-        sNext: "→", 
-        sLast: "→" 
+        sNext: "→",
+        sLast: "→"
       }
     }
   });
