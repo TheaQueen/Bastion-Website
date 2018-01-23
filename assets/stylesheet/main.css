@@ -378,13 +378,12 @@ header ul li a {
   cursor: pointer;
 }
 .commands-title::after {
-  content: "";
+  content: '';
   background-image: url(/assets/image/dropdown.svg);
-  background-size: 7px;
+  background-size: 7px 5px;
   width: 7px;
   height: 5px;
   position: absolute;
-  display: inline;
   margin: 7px 0 0 7px;
 }
 .sorting_asc .commands-title::after {
