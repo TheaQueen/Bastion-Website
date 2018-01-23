@@ -340,20 +340,15 @@ header ul li a {
  */
 #commands .commands-container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1500px;
   padding: 10px;
   border-radius: 3px;
-  border-left: 5px solid #b5e2dd;
-  box-shadow: 0 2px 5px rgba(0,0,0,.3);
-  background-color: #23272A;
+  border-left: 5px solid #B2E2DD;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+  background-color: #1A1C1F;
 }
 #commands .commands-container .cmd-table {
-  margin: 10px 0 0 0;
-}
-#commands .commands-container .cmd-table h2 {
-  font-weight: 400;
-  text-align: left;
-  color: #B2E2DD;
+  margin-top: 10px;
 }
 #commands .commands-container .cmd-table td {
   color: #EEE;
@@ -361,15 +356,15 @@ header ul li a {
 #commands .commands-container .cmd-table th {
   text-align: left;
 }
-#commands .commands-container #commandsSearch {
+#commandsSearch {
   width: 100%;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 #commands .commands-container .bottom {
   overflow: auto;
-  color: hsla(0,0%,100%,.6);
+  color: rgba(255, 255, 255, .3);
   font-size: 14px;
-  padding: 10px 0 0 0;
+  padding-top: 10px;
 }
 #commands .commands-container .bottom .dataTables_info {
   float: left;
@@ -402,7 +397,7 @@ header ul li a {
   background-color: #b8e2dd;
   color: black;
 }
-input[type='text'], input[type='url'], input[type='number'], textarea {
+#commands input[type='text'] {
   width: 100%;
   margin: 0;
   padding: 10px;
@@ -411,14 +406,12 @@ input[type='text'], input[type='url'], input[type='number'], textarea {
   background-color: #18191C;
   color: #F5F5F5;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
   resize: vertical;
-}
-input[type='text'], input[type='url'], input[type='number'], textarea {
   outline: none;
 }
-/* This query will take effect for any screen smaller than 760px and also iPads specifically. */
-@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+
+/* Small screen devices */
+@media only screen and (max-width: 899px) {
   #commands table,
   #commands tbody,
   #commands tr {
@@ -429,29 +422,25 @@ input[type='text'], input[type='url'], input[type='number'], textarea {
   }
   #commands tr {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
-    margin: 0 0 20px 0;
+    margin-bottom: 20px;
   }
-  #commands td {
-    border: none;
-    position: relative;
+  #commandsTable_info, #commandsTable_paginate {
+    text-align: center;
+    width: 100%;
+    display: block;
   }
-  .dataTables_paginate .paginate_button,
-  .dataTables_paginate .ellipsis {
-    margin: 0 5px 5px 0;
-  }
-  #commands .commands-container .bottom .dataTables_paginate {
-    float: left;
-    margin-top: 10px;
+  #commandsTable_wrapper .bottom {
+    padding-bottom: 10px;
   }
   td:nth-of-type(1) {
     display: inline-block;
     width: auto;
-    float: right;
+    float: left;
   }
   td:nth-of-type(2) {
     display: inline-block;
     width: auto;
-    float: left;
+    float: right;
   }
   td:nth-of-type(3) {
     display: block;
