@@ -119,9 +119,9 @@ $.ajax({
 
     function insertBasicTable(data, id) {
       $('.cmd-table').append(
-          Object.keys(data).reduce(function(o, n) {
-            return o + tr(td(`<code>${n}</code>`) + '' + td(id.charAt(0).toUpperCase() + id.replace(/_/, ' ').slice(1)) + '' + td(mdToHTML.makeHtml(data[n]) + ''));
-          }, '')
+        Object.keys(data).reduce(function(o, n) {
+          return o + tr(td(`<code>${n}</code>`) + '' + td(id.charAt(0).toUpperCase() + id.replace(/_/, ' ').slice(1)) + '' + td(mdToHTML.makeHtml(data[n]) + ''));
+        }, '')
       );
     };
     setupDataTable();
@@ -133,18 +133,18 @@ function setupDataTable() {
   dataTable = $('#commandsTable').DataTable({
     sDom: 'rt<"bottom"ip>',
     autoWidth: false,
-    lengthMenu:[25],
+    lengthMenu: [25],
 		language: {
-      select: "_INPUT_",
-      infoFiltered: " | Filtered: _TOTAL_",
-      info: "Page: _PAGE_/_PAGES_ | Commands: _MAX_",
-      zeroRecords: "No commands matched your search",
-      sEmptyTable: "No commands found",
+      select: '_INPUT_',
+      infoFiltered: ' | Filtered: _TOTAL_',
+      info: 'Page: _PAGE_/_PAGES_ | Commands: _MAX_',
+      zeroRecords: 'No commands matched your search',
+      sEmptyTable: 'No commands found',
       oPaginate: {
-        sFirst: "←",
-        sPrevious: "←",
-        sNext: "→",
-        sLast: "→"
+        sFirst: '←',
+        sPrevious: '←',
+        sNext: '→',
+        sLast: '→'
       }
     }
   });
