@@ -375,6 +375,7 @@ header ul li a {
 }
 .commands-title {
   position: relative;
+  cursor: pointer;
 }
 .commands-title::after {
   content: "";
