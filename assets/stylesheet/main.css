@@ -26,7 +26,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
   -o-user-select: none;
   user-select: none;
 }
-#commands code {
+#commands code, input {
   -webkit-user-select: text;
   -khtml-user-select: text;
   -moz-user-select: text;
@@ -358,9 +358,9 @@ header ul li a {
 #commands .commands-container .cmd-table td {
   color: #EEE;
 }
-#commands .commands-container .cmd-table th { 
+#commands .commands-container .cmd-table th {
   text-align: left;
-} 
+}
 #commands .commands-container #commandsSearch {
   width: 100%;
   margin: 0 0 10px 0;
