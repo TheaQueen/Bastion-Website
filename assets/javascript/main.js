@@ -110,10 +110,7 @@ $.ajax({
         return openTag+content+closeTag;
       };
     };
-    let tHead = makeTag('<thead>', '</thead>');
-    let tBody = makeTag('<tbody>', '</tbody>');
     let tr = makeTag('<tr>', '</tr>');
-    let th = makeTag('<th><h2>', '</h2></th>');
     let td = makeTag('<td>', '</td>');
 
     for (let module of Object.keys(commands)) {
@@ -122,16 +119,37 @@ $.ajax({
 
     function insertBasicTable(data, id) {
       $('.cmd-table').append(
-        tHead(tr(th(id.replace(/_/, ' ').toUpperCase()))) +
-        tBody(
-          Object.keys(data).reduce(function(o, n) {
-            return o + tr(td(`<code>${n}</code>`) + '' + td(mdToHTML.makeHtml(data[n]) + ''));
-          }, '')
-        )
+        Object.keys(data).reduce(function(o, n) {
+          return o + tr(td(`<code>${n}</code>`) + '' + td(id.charAt(0).toUpperCase() + id.replace(/_/, ' ').slice(1)) + '' + td(mdToHTML.makeHtml(data[n]) + ''));
+        }, '')
       );
     };
+    setupDataTable();
   }
 });
+
+// setup DataTables with #commandsTable table
+function setupDataTable() {
+  dataTable = $('#commandsTable').DataTable({
+    sDom: 'rt<"bottom"ip>',
+    autoWidth: false,
+    lengthMenu: [25],
+		language: {
+      select: '_INPUT_',
+      infoFiltered: ' | Filtered: _TOTAL_',
+      info: 'Page: _PAGE_/_PAGES_ | Commands: _MAX_',
+      zeroRecords: 'No commands matched your search',
+      sEmptyTable: 'No commands found',
+      oPaginate: {
+        sFirst: '←',
+        sPrevious: '←',
+        sNext: '→',
+        sLast: '→'
+      }
+    }
+  });
+  $('#commandsSearch').keyup(function(){ dataTable.search($(this).val()).draw();})
+};
 
 /**
  * Back to top

@@ -26,7 +26,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
   -o-user-select: none;
   user-select: none;
 }
-#commands code {
+#commands code, input {
   -webkit-user-select: text;
   -khtml-user-select: text;
   -moz-user-select: text;
@@ -340,15 +340,113 @@ header ul li a {
  */
 #commands .commands-container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1500px;
+  padding: 10px;
+  border-radius: 3px;
+  border-left: 5px solid #B2E2DD;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+  background-color: #1A1C1F;
 }
-#commands .commands-container .cmd-table h2 {
-  font-weight: 400;
-  text-align: left;
-  color: #B2E2DD;
+#commands .commands-container .cmd-table {
+  margin-top: 10px;
 }
 #commands .commands-container .cmd-table td {
   color: #EEE;
+}
+#commands .commands-container .cmd-table th {
+  text-align: left;
+}
+#commandsSearch {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#commands .commands-container .bottom {
+  overflow: auto;
+  color: rgba(255, 255, 255, .3);
+  font-size: 14px;
+  padding-top: 10px;
+}
+#commands .commands-container .bottom .dataTables_info {
+  float: left;
+  padding: 10px 0;
+}
+#commands .commands-container .bottom .dataTables_paginate {
+  float: right;
+}
+.dataTables_paginate .paginate_button, .dataTables_paginate .ellipsis {
+  display: inline-block;
+  padding: 8px 0;
+  min-width: 32px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #24272b;
+  vertical-align: middle;
+  text-align: center;
+  opacity: 0.8;
+  box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+.dataTables_paginate .paginate_button:hover, .dataTables_paginate .ellipsis:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 15px rgba(0,0,0,.3);
+}
+.dataTables_paginate .current {
+  opacity: 1;
+  background-color: #b8e2dd;
+  color: black;
+}
+#commands input[type='text'] {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #111111;
+  border-radius: 3px;
+  background-color: #18191C;
+  color: #F5F5F5;
+  font-family: 'Source Sans Pro', sans-serif;
+  resize: vertical;
+  outline: none;
+}
+
+/* Small screen devices */
+@media only screen and (max-width: 899px) {
+  #commands table,
+  #commands tbody,
+  #commands tr {
+    display: block;
+  }
+  #commands thead {
+    display: none;
+  }
+  #commands tr {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    margin-bottom: 20px;
+  }
+  #commandsTable_info, #commandsTable_paginate {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  #commandsTable_wrapper .bottom {
+    padding-bottom: 10px;
+  }
+  td:nth-of-type(1) {
+    display: inline-block;
+    width: auto;
+    float: left;
+  }
+  td:nth-of-type(2) {
+    display: inline-block;
+    width: auto;
+    float: right;
+  }
+  td:nth-of-type(3) {
+    display: block;
+    width: 100%;
+    overflow: auto;
+  }
 }
 
 
