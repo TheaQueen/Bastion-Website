@@ -136,10 +136,10 @@ function setupDataTable() {
     lengthMenu: [25],
 		language: {
       select: '_INPUT_',
-      infoFiltered: ' | Filtered: _TOTAL_',
-      info: 'Page: _PAGE_/_PAGES_ | Commands: _MAX_',
-      zeroRecords: 'No commands matched your search',
-      sEmptyTable: 'No commands found',
+      infoFiltered: ' • Filtered _TOTAL_ Commands',
+      info: 'Page _PAGE_ of _PAGES_ • _MAX_ Commands',
+      zeroRecords: 'No command matched your search.',
+      sEmptyTable: 'No commands found.',
       oPaginate: {
         sFirst: '←',
         sPrevious: '←',
