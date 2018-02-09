@@ -569,6 +569,30 @@ header ul li a {
 }
 
 /**
+ * FAQ
+ */
+#faq .faq-section {
+  margin-bottom: 40px;
+}
+#faq .faq-section .section-title {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #68bcc0;
+}
+#faq .faq-section .questions-container .question {
+  margin-bottom: 20px;
+}
+#faq .faq-section .questions-container .question .title {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #b2e2dd;
+}
+#faq .faq-section .questions-container .question .image img {
+  max-width: 100%;
+  margin: 10px 0;
+}
+
+/**
  * Footer
  */
 footer {
