@@ -152,6 +152,38 @@ function setupDataTable() {
 };
 
 /**
+ * Autofetch FAQ
+ */
+$.ajax({
+  url: '/assets/data/faqs.json',
+  dataType: 'json',
+  failure: function(err) {
+    console.log(err);
+  },
+  success: function(faqs) {
+    console.log(true);
+    for (let section of Object.keys(faqs)) {
+      $('.faq-container').append(
+        `<div class="faq-section">
+        <div class="section-title">${section.toUpperCase()}</div>
+        <div class="questions-container ${section}-questions-container"></div>
+        </div>`
+      );
+
+      for (let question of faqs[section]) {
+        $(`.${section}-questions-container`).append(
+          `<div class="question ${section}-question">
+          <div class="title">${question.question}</div>
+          <div class="description">${mdToHTML.makeHtml(question.answer)}</div>
+          <div class="image">${question.image ? `<img src="${question.image}" />` : ''}</div>
+          </div>`
+        );
+      }
+    }
+  }
+});
+
+/**
  * Back to top
  */
 function getScrollXY() {
