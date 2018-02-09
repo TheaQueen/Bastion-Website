@@ -332,8 +332,11 @@ header ul li a {
   max-width: 1024px;
   width: 80vw;
   height: auto;
+  filter: saturate(0);
 }
-
+#main-logo:hover {
+  filter: saturate(1);
+}
 
 /**
  * Commands
