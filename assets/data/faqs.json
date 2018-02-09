@@ -3,7 +3,7 @@
     {
       "question": "What is a guild?",
       "answer": "A Discord Guild is what we call a Discord Server, that's all.",
-      "image": "https://www.wikihow.com/images/thumb/c/ca/Take-a-Screenshot-in-Microsoft-Windows-Step-3-Version-8.jpg/aid3450-v4-728px-Take-a-Screenshot-in-Microsoft-Windows-Step-3-Version-8.jpg"
+      "image": ""
     },
     {
       "question": "How do I get an ID (User ID, Role ID, Channel ID, Guild ID, etc.)?",
@@ -20,7 +20,7 @@
     {
       "question": "I found a bug with the Bastion Bot, how/where can I report it?",
       "answer": "First, see if it's already reported in [GitHub Issues](https://github.com/TheBastionBot/Bastion/issues). If it's not reported, [create a new issue in GitHub](https://github.com/TheBastionBot/Bastion/issues/new) with proper examples and screenshots (if necessary) and as much detail as necessary on how we can replicate it.<br>We will fix the issue as soon as possible. And you receive a huge thanks from us along with some Bastion Currencies.",
-      "image": "https://revryl.com/wp-content/uploads/2013/08/ScreenShot.png"
+      "image": ""
     },
     {
       "question": "I have a suggestion for the Bastion Bot, how can I let you know?",
