@@ -44,7 +44,7 @@
               <li onMouseOver="showInnerNav()" onMouseOut="hideInnerNav()">
                 <a class="headerNavMore">More&ensp;<img src="/assets/image/dropdown.svg" /></a>
                 <ul id="headerNavInner" class="innerNav">
-                  <!-- <li class="innerNavItem"><a onclick="updatePage(this.attributes['link-section'].value)" link-section="faq">FAQ</a></li> -->
+                  <li class="innerNavItem"><a onclick="updatePage(this.attributes['link-section'].value)" link-section="faq">FAQ</a></li>
                   <li class="innerNavItem"><a onclick="updatePage(this.attributes['link-section'].value)" link-section="tools">Tools</a></li>
                   <li class="innerNavItem"><a href="https://dev.bastionbot.org" target="_blank">Developers</a></li>
                   <li class="innerNavItem"><a href="https://i18n.bastionbot.org" target="_blank">Translators</a></li>
@@ -59,6 +59,7 @@
               <li><a href="https://discord.gg/fzx8fkt" target="_blank">Join Discord</a></li>
               <li><a onclick="updatePage(this.attributes['link-section'].value)" link-section="add">Add to Discord</a></li>
               <li><a class="button" onclick="updatePage(this.attributes['link-section'].value)" link-section="donate">Donate</a></li>
+              <script>var __cnt__=0;</script>
             </ul>
           </div>
         </nav>
@@ -80,7 +81,7 @@
           <path fill="none" stroke="#FAFAFA" stroke-width="8" d="M4 34h30V4H4z" stroke-linecap="round" stroke-linejoin="round"/>
         </svg> -->
         <div class="hero-container">
-          <img id="main-logo" src="/assets/image/BastionText2.png" height="176" width="1024" onMouseOver="this.src='/assets/image/BastionText3.png'" onMouseOut="this.src='/assets/image/BastionText2.png'" />
+          <img id="main-logo" src="/assets/image/BastionText2.png" height="176" width="1024" onMouseOver="this.src='/assets/image/BastionText3.png'" onMouseOut="this.src='/assets/image/BastionText2.png'" onclick="++__cnt__;if(__cnt__>=11)window.open('https://6b33726e333170346e6963.gitlab.io/217128516532043776')" />
           <h2 id="tagline">Give awesome perks to your Discord server!</h2>
           <a onclick="updatePage(this.attributes['link-section'].value)" link-section="add"><button class="primary" onMouseOver="taglineHighlight(1)" onmouseout="taglineHighlight(0)">Add Bastion to Discord</button></a>
           <a href="https://discord.gg/fzx8fkt" target="_blank"><button onMouseOver="taglineJoin()" onmouseout="taglineAdd()">Join our Discord server</button></a>
@@ -175,6 +176,14 @@
         </div> <!-- .sponsors-container -->
       </section> <!-- #sponsors -->
 
+      <section id="faq" hidden>
+        <div class="header">
+          <h1>Frequently Asked Questions</h1>
+          <p>You have an issue/question that's not listed here? No worries mate, just head over to the <a>#help</a> channel in <a href="https://discord.gg/fzx8fkt" target="_blank">Bastion Discord Server</a>, and ask it.</p>
+        </div>
+        <div class="faq-container"></div> <!-- .faq-container -->
+      </section> <!-- #faq -->
+
       <section id="e404" hidden>
         <div class="e404-container">
           <h2>You look lost my friend.</h2>
@@ -194,7 +203,7 @@
             <a href="https://docs.bastionbot.org" target="_blank">Installation Guide</a>
             <a href="https://discord.gg/fzx8fkt" target="_blank">Help &amp; Support</a>
             <a onclick="updatePage(this.attributes['link-section'].value)" link-section="tools">Tools</a>
-            <!-- <a onclick="updatePage(this.attributes['link-section'].value)" link-section="faq">FAQ</a> -->
+            <a onclick="updatePage(this.attributes['link-section'].value)" link-section="faq">FAQ</a>
             <a href="https://status.bastionbot.org" target="_blank">Status</a>
           </div>
           <div class="nav-section">
