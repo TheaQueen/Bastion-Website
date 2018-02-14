@@ -99,7 +99,7 @@ function taglineAdd() {
 let commands;
 let mdToHTML = new showdown.Converter();
 $.ajax({
-  url: 'https://raw.githubusercontent.com/TheBastionBot/Bastion/master/locales/en/modules.json',
+  url: 'https://raw.githubusercontent.com/TheBastionBot/Bastion/stable/locales/en/modules.json',
   dataType: 'json',
   failure: function(err) {
     console.log(err);
