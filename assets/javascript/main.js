@@ -161,7 +161,6 @@ $.ajax({
     console.log(err);
   },
   success: function(faqs) {
-    console.log(true);
     for (let section of Object.keys(faqs)) {
       $('.faq-container').append(
         `<div class="faq-section">
