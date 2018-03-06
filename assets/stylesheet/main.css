@@ -339,6 +339,43 @@ header ul li a {
 }
 
 /**
+ * Features
+ */
+#features .features-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+#features .features-container .feature {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#features .features-container .feature:nth-child(even) {
+  flex-wrap: wrap-reverse;
+}
+#features .features-container .feature div {
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  align-self: center;
+}
+@media only screen and (max-width: 899px) {
+  #features .features-container .feature div {
+    width: 100%;
+  }
+}
+#features .features-container .feature div.feature-screenshot {
+}
+#features .features-container .feature div.feature-description {
+  font-size: 1.3em;
+}
+#features .features-container .feature div.feature-screenshot img {
+  width: 90%;
+}
+
+/**
  * Commands
  */
 #commands .commands-container {
