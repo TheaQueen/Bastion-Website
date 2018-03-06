@@ -37,7 +37,7 @@
           <div class="headerNav">
             <ul class="mainNav">
               <li><a onclick="updatePage(this.attributes['link-section'].value)" link-section="hero">Home</a></li>
-              <!-- <li><a onclick="updatePage(this.attributes['link-section'].value)" link-section="features">Features</a></li> -->
+              <li><a onclick="updatePage(this.attributes['link-section'].value)" link-section="features">Features</a></li>
               <li><a onclick="updatePage(this.attributes['link-section'].value)" link-section="commands">Commands</a></li>
               <li><a href="https://docs.bastionbot.org" target="_blank">Guide</a></li>
               <li><a href="https://discord.gg/fzx8fkt" target="_blank">Help &amp; Support</a></li>
@@ -87,6 +87,19 @@
           <a href="https://discord.gg/fzx8fkt" target="_blank"><button onMouseOver="taglineJoin()" onmouseout="taglineAdd()">Join our Discord server</button></a>
         </div> <!-- .hero-container -->
       </section> <!-- #hero -->
+
+      <section id="features" hidden>
+        <div class="features-container">
+          <div class="feature">
+            <div class="feature-screenshot"></div>
+            <div class="feature-description"></div>
+          </div>
+          <div class="feature">
+            <div class="feature-description"></div>
+            <div class="feature-screenshot"></div>
+          </div>
+        </div> <!-- .features-container -->
+      </section> <!-- #features -->
 
       <section id="commands" hidden>
         <div class="commands-container">
@@ -207,6 +220,7 @@
         <div class="nav">
           <div class="nav-section">
             <p>Resources</p>
+            <a onclick="updatePage(this.attributes['link-section'].value)" link-section="features">Features</a>
             <a href="https://docs.bastionbot.org" target="_blank">Installation Guide</a>
             <a href="https://discord.gg/fzx8fkt" target="_blank">Help &amp; Support</a>
             <a onclick="updatePage(this.attributes['link-section'].value)" link-section="tools">Tools</a>
