@@ -365,10 +365,12 @@ header ul li a {
     width: 100%;
   }
 }
-#features .features-container .feature div.feature-screenshot {
+#features .features-container .feature div.feature-description b {
+  display: block;
+  font-size: 1.3em;
 }
 #features .features-container .feature div.feature-description {
-  font-size: 1.3em;
+  font-size: 1.2em;
   opacity: .9;
 }
 #features .features-container .feature div.feature-screenshot img {
