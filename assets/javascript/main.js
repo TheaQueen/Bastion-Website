@@ -264,4 +264,4 @@ $('#back-to-top').click(function() {
  */
 setTimeout(() => {
   document.getElementById('site-banner').className = 'isActive';
-}, 60000);
+}, 30000);
