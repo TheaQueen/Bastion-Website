@@ -258,3 +258,10 @@ $('#back-to-top').click(function() {
   }, 500);
   return false; // Don't update the URL hash
 });
+
+/**
+ * Display banner after user is on for few moments.
+ */
+setTimeout(() => {
+  document.getElementById('site-banner').removeAttribute('style');
+}, 60000);
