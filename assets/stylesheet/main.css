@@ -168,6 +168,7 @@ p a {
   background-color: #b2e2dd;
   background-color: rgba(178, 226, 221, .95);
   color: #18191c;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, .3);
   border: 1px solid #68bcc0;
   border: 1px solid rgba(104, 188, 192, .95);
   border-radius: 3px;
@@ -193,6 +194,7 @@ p a {
 #site-banner:hover {
   bottom: 20px;
   background-color: #b2e2dd;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, .3);
   border: 1px solid #68bcc0;
 }
 
