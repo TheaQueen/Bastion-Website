@@ -159,7 +159,7 @@ p a {
 #site-banner {
   position: fixed;
   display: flex;
-  bottom: 15px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   min-height: 50px;
@@ -173,6 +173,7 @@ p a {
   text-align: right;
   z-index: 10;
   cursor: pointer;
+  opacity: 0;
 }
 #site-banner::after {
   content: '❌';
@@ -180,6 +181,15 @@ p a {
 }
 #site-banner:hover {
   bottom: 20px;
+}
+#site-banner.isActive {
+  bottom: 15px;
+  opacity: 1;
+}
+#site-banner.isHidden {
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /**
