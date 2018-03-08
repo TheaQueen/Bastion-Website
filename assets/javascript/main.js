@@ -263,5 +263,5 @@ $('#back-to-top').click(function() {
  * Display banner after user is on for few moments.
  */
 setTimeout(() => {
-  document.getElementById('site-banner').removeAttribute('style');
+  document.getElementById('site-banner').className = 'isActive';
 }, 60000);
