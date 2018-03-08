@@ -166,8 +166,10 @@ p a {
   min-width: 50px;
   padding: 15px;
   background-color: #b2e2dd;
+  background-color: rgba(178, 226, 221, .95);
   color: #18191c;
   border: 1px solid #68bcc0;
+  border: 1px solid rgba(104, 188, 192, .95);
   border-radius: 3px;
   align-items: center;
   text-align: right;
@@ -181,6 +183,8 @@ p a {
 }
 #site-banner:hover {
   bottom: 20px;
+  background-color: #b2e2dd;
+  border: 1px solid #68bcc0;
 }
 #site-banner.isActive {
   bottom: 15px;
