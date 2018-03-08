@@ -181,11 +181,6 @@ p a {
   content: '❌';
   margin-left: 15px;
 }
-#site-banner:hover {
-  bottom: 20px;
-  background-color: #b2e2dd;
-  border: 1px solid #68bcc0;
-}
 #site-banner.isActive {
   bottom: 15px;
   opacity: 1;
@@ -194,6 +189,11 @@ p a {
   bottom: 0;
   opacity: 0;
   pointer-events: none;
+}
+#site-banner:hover {
+  bottom: 20px;
+  background-color: #b2e2dd;
+  border: 1px solid #68bcc0;
 }
 
 /**
