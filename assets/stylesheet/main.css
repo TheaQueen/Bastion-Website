@@ -153,6 +153,34 @@ p a {
   color: #B2E2DD;
 }
 
+/**
+ * Site Banner
+ */
+#site-banner {
+  position: fixed;
+  display: flex;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 50px;
+  min-width: 50px;
+  padding: 15px;
+  background-color: #b2e2dd;
+  color: #18191c;
+  border: 1px solid #68bcc0;
+  border-radius: 3px;
+  align-items: center;
+  text-align: right;
+  z-index: 10;
+  cursor: pointer;
+}
+#site-banner::after {
+  content: '❌';
+  margin-left: 15px;
+}
+#site-banner:hover {
+  bottom: 20px;
+}
 
 /**
  * Header
