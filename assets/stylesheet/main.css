@@ -563,6 +563,7 @@ header ul li a {
  */
 #tools .tools-container,
 #sponsors .sponsors-container,
+#donate .donate-container,
 #add .add-container {
   flex: 1 1 auto;
   flex-wrap: wrap;
@@ -590,6 +591,7 @@ header ul li a {
 
 #tools .tools-container .tool-section,
 #sponsors .sponsors-container .sponsor-section,
+#donate .donate-container .donate-section,
 #add .add-container .add-section {
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
@@ -610,6 +612,7 @@ header ul li a {
 
 #tools .tools-container .tool-section a,
 #sponsors .sponsors-container .sponsor-section a,
+#donate .donate-container .donate-section a,
 #add .add-container .add-section a {
   position: relative;
   display: block;
@@ -621,11 +624,13 @@ header ul li a {
 }
 #tools .tools-container .tool-section:hover,
 #sponsors .sponsors-container .sponsor-section:hover,
+#donate .donate-container .donate-section:hover,
 #add .add-container .add-section:hover {
   transform: translateY(-10px);
 }
 
 #tools .tools-container .tool-section a img,
+#donate .donate-container .donate-section a img,
 #sponsors .sponsors-container .sponsor-section a img {
   width: 50%;
   height: auto;
@@ -641,7 +646,8 @@ header ul li a {
 }
 
 #tools .tools-container .tool-section a button,
-#sponsors .sponsors-container .sponsor-section a button {
+#sponsors .sponsors-container .sponsor-section a button,
+#donate .donate-container .donate-section a button {
   position: absolute;
 }
 
