@@ -183,6 +183,44 @@ $.ajax({
 });
 
 /**
+ * Autofetch Latest Release
+ */
+$.ajax({
+  url: 'https://api.github.com/repos/TheBastionBot/Bastion/releases/latest',
+  dataType: 'json',
+  failure: function(err) {
+    console.log(err);
+  },
+  success: function(release) {
+    let releaseTime = Date.now() - Date.parse(release.published_at);
+    let seconds = releaseTime / 1000;
+    let days = parseInt(seconds / 86400);
+    seconds = seconds % 86400;
+    let hours = parseInt(seconds / 3600);
+    seconds = seconds % 3600;
+    let minutes = parseInt(seconds / 60);
+    seconds = parseInt(seconds % 60);
+
+    releaseTime = `${seconds} ${seconds === 1 ? 'second' : 'seconds'}`;
+    if (days) {
+      releaseTime = `${days} ${days === 1 ? 'day' : 'days'}`;
+    }
+    else if (hours) {
+      releaseTime = `${hours} ${hours === 1 ? 'hour' : 'hours'}`;
+    }
+    else if (minutes) {
+      releaseTime = `${minutes} ${minutes === 1 ? 'minute' : 'minutes'}`;
+    }
+
+    document.getElementsByClassName('changelog-container')[0].insertAdjacentHTML('beforeend', `
+    <div class="release-name">${release.name}</div>
+    <div class="release-date">${release.author.login} released this ${releaseTime} ago.</div>
+    <div class="release-body">${mdToHTML.makeHtml(release.body)}</div>
+    `);
+  }
+});
+
+/**
  * Back to top
  */
 function getScrollXY() {
