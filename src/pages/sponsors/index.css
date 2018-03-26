@@ -1,0 +1,52 @@
+#sponsors .header,
+#sponsors .container {
+  padding: 20px;
+  min-height: 25vh;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#sponsors .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#sponsors .container .sponsor {
+  margin: 20px;
+  max-width: 350px;
+  box-shadow: 0 9px 30px 0 rgba(35,39,42,.1);
+  border-radius: 8px;
+  transform: translateY(0);
+  transition: all .2s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+#sponsors .container .sponsor:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px 0 rgba(35,39,42,.1);
+}
+
+#sponsors .container .sponsor a {
+  display: block;
+  color: #222;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+#sponsors .container .sponsor a .image,
+#sponsors .container .sponsor a .details {
+  /* display: flex; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#sponsors .container .sponsor a .image {
+  align-content: center;
+}
+
+#sponsors .container .sponsor a .details h4 {
+  font-size: 1.3em;
+}
