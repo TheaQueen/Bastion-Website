@@ -1,0 +1,26 @@
+{
+  "name": "bastionbot.org",
+  "description": "The homepage of The Bastion Bot Project.",
+  "version": "1.0.0",
+  "author": "Sankarsan Kampa (a.k.a. k3rnr3p1ni4c)",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gatsby": "^1.9.202",
+    "gatsby-link": "^1.6.37",
+    "gatsby-plugin-nprogress": "^1.0.12",
+    "gatsby-plugin-react-helmet": "^2.0.5",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [],
+  "license": "GPL-3.0",
+  "main": "",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^1.10.2"
+  }
+}
