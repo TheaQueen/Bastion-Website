@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Music",
+    "description": "Play music in multiple servers and invite your gang and listen together. Pause, resume, skip, stop anytime you want. Control the volume as you wish. Or just allow specific users to use the music commands to keep the heat down. Save your playlists and play it anytime you like. Get lyrics for any song you want. Auto pause music if no one's in the voice channel to keep the bandwidth usage low.",
+    "image": "https://resources.bastionbot.org/images/1514d385b12c469fca36a5e893bf786a.png"
+  },
+  {
+    "title": "Games",
+    "description": "Play a whole bunch of interesting games with your friends or with yourself and test your skills!",
+    "image": "https://resources.bastionbot.org/images/3032958327d58b18ff8d735130ce5069.png"
+  },
+  {
+    "title": "User Profiles",
+    "description": "Global profiles for users that shows the amount of Bastion Currencies with them, their global rank, experience points or level. They can also set up to have a short bio, or their location, or even their birth date.",
+    "image": "https://resources.bastionbot.org/images/3bedb115aa2dd150fdfc8fad04dd2702.png"
+  },
+  {
+    "title": "Virtual Currencies",
+    "description": "A virtual currency system where users get currencies when they chat in the server and level up, or participate in currency giveaway events, or gamble in gambling games. You can also use the <code>daily</code> command to get some bonus currencies daily. Or if you're a server owner and you're selling roles or other items in your server, you'll get 90% of the profit when users buy items from your server shop.",
+    "image": "https://resources.bastionbot.org/images/02e23db5feb52ab90b628e2d1b3423fb.png"
+  },
+  {
+    "title": "Level Up Roles",
+    "description": "You can set level up roles so that when users in your server reach a certain level, they will automatically get those roles.",
+    "image": "https://resources.bastionbot.org/images/a33aab780362c8a65d295d6f6cd215ef.png"
+  },
+  {
+    "title": "Server Shop",
+    "description": "You can set up different kinds of shops in your server which users can use to buy items from your server, like role shop, gift shop, or any custom shop as you like. And when the users buy items from your server shop, you, as the server owner, will get 90% of the profit. Easy way to make money, ain't it?",
+    "image": "https://resources.bastionbot.org/images/718a24b8e0f198cc26b637c497c95ec2.png"
+  },
+  {
+    "title": "Filters",
+    "description": "Let Bastion automatically filter and block invites, links, or blocked words and mention spams from nasty users.",
+    "image": "https://resources.bastionbot.org/images/69004c1181823b777aa1af32e0858328.png"
+  },
+  {
+    "title": "Searches",
+    "description": "Perform different searches to query for items from a whole lot of sources like Wikipedia, Google Maps, Games, Movies, TV Series, Animes, Mangas, Weather, CoinMarketCap, YouTube, Twitch, and a lot of other great sources.",
+    "image": "https://resources.bastionbot.org/images/be6e2ea0a00120f5d06330dee4c63ea8.png"
+  },
+  {
+    "title": "Game Stats",
+    "description": "Get player/server stats of any player/server from a bunch of different games like Battlefield, Call of Duty, Destiny 2, Fortnite, PUBG, Rainbow 6, Rocket League, CS:GO, Minecraft, Team Fortress 2, Paladins, Quake 3, etc.",
+    "image": "https://resources.bastionbot.org/images/69898a99b193bf4eeb552581ebe816b7.png"
+  },
+  {
+    "title": "Greeting/Farewell Messages",
+    "description": "Send warm greetings to new users when the join your server, send them the greetings privately if you wish. You can also wave a warn goodbye publicly when they leave using farewell messages.",
+    "image": "https://resources.bastionbot.org/images/9d40c325b92a29343c327aa7d78629ac.png"
+  },
+  {
+    "title": "Moderation Logs",
+    "description": "Log every moderation events in your server so that you can get back to it whenever you need. If you forget to add a reason to a moderation event, don't worry, you can update the reason anytime you want.",
+    "image": "https://resources.bastionbot.org/images/e2fff6e2f7ad210c6e813ba943c32e03.png"
+  },
+  {
+    "title": "Slow Mode",
+    "description": "Chat's getting over heated by some spicy users? Enable slow mode, relax and let Bastion handle the heat for you. No one other than the Admins won't be able to send messages too fast.",
+    "image": "https://resources.bastionbot.org/images/e9a46490e1886b6d1b209adf3494d0dc.png"
+  },
+  {
+    "title": "Animated Emojis",
+    "description": "Don't have Nitro? Don't worry, you can use your server's animated emojis with Bastion without the need of Nitro. Even if you have Nitro, it's more fun; you'll get larger animated emojis!",
+    "image": "https://resources.bastionbot.org/images/bc5d16acf1b1bbf7a04fc8b102652e15.gif"
+  },
+  {
+    "title": "Unlimited Fun",
+    "description": "Use a whole bunch of fun commands, including - but not limited to - air horn, be like bill, fake ban, xkcd, garfield, robotify, catify, fortune, quotes, etc.",
+    "image": "https://resources.bastionbot.org/images/7b5062f42012210afb97cac6c2144990.png"
+  },
+  {
+    "title": "Starboard",
+    "description": "Enable starboard and if someone starts ⭐ a message in the server, it will get logged to the starboard hall of fame channel.",
+    "image": "https://resources.bastionbot.org/images/666a2a8e267bd689fdcb50a72c1c7814.png"
+  },
+  {
+    "title": "Scheduled Commands",
+    "description": "You can schedule commands to run them automatically in a specific schedule. Like <code>cron</code> in *nix based operating systems.",
+    "image": "https://resources.bastionbot.org/images/3b1a23f529e26559794c44803754e857.png"
+  },
+  {
+    "title": "Triggers & Reactions",
+    "description": "You can add custom message triggers that will make Bastion respond with a custom message that you've set. Like custom commands, but without needing to write any code.",
+    "image": "https://resources.bastionbot.org/images/267477d81b624e708a354e57b3c66c2b.png"
+  },
+  {
+    "title": "Help",
+    "description": "Can't figure out how to use a command? Or what permissions are needed by a command? Don't worry, just use the <code>help</code> command and you'll get all the details for a command on how to use it with it's syntax &amp; examples, the permission required by Bastion and the user to use it, which module it's in, what are the command aliases, etc.",
+    "image": "https://resources.bastionbot.org/images/a03577ace6a7f896d102f0d1670b2c96.png"
+  }
+]
