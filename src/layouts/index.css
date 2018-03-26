@@ -1,0 +1,169 @@
+/**
+ * Fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+::-moz-selection {
+  background-color: white;
+  background-color: rgba(255, 255, 255, .9);
+  color: black;
+}
+::selection {
+  background-color: white;
+  background-color: rgba(255, 255, 255, .9);
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+html {
+  overflow-x: none;
+  font-family: sans-serif;
+  background-color: #070a0c;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  color: white;
+}
+
+main {
+  padding: 25px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1600px;
+  min-height: calc(100vh - 72px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  color: #DFDFDF;
+  text-decoration: none;
+  transition: color .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+a:hover {
+  color: white;
+}
+
+button {
+  margin: 5px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+  transition: box-shadow .3s cubic-bezier(.175, .885, .32, 1.275), transform .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+button:hover {
+  box-shadow: none;
+  transform: translateY(-2px);
+}
+button.blurple {
+  background-color: #7289DA;
+  color: white;
+}
+button.primary {
+  background-color: #61dafb;
+  /* background-color: #7289DA; */
+  /* color: white; */
+}
+button.black {
+  background-color: black;
+  color: #F5F5F5;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
+}
+button.black:hover {
+  background-color: black;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+}
+button.icon {
+  height: 16px;
+  width: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 30px;
+}
+button.icon.top {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAn1BMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8TrG38AAAANHRSTlMABAYKDRQcJSgpMzQ6QklOVWNkcHJ9hoqPn6KjpKaprrGytLW4vcHDxMjLzdjd4Ony9vn8DtaE0gAAAG1JREFUeAGtyFUSwjAYAOElSHB3lwDBhf/+Z2OmaSaZPnff9iOt/Vgp4sxH5uFGE+x6IGP/fVlw3jKVofuubArYPcykB9D6nYokoA7Sgcb7XsYBpdu3yfGl8UDleaVaIwC6DsQAecLFZGC3xPUHGF4Jis0TNxYAAAAASUVORK5CYII=);
+}
+button.icon.bottom {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAn1BMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8TrG38AAAANHRSTlMABAYKDRQcJSgpMzQ6QklOVWNkcHJ9hoqPn6KjpKaprrGytLW4vcHDxMjLzdjd4Ony9vn8DtaE0gAAAGhJREFUeAGtyEUaQiEUgNHfZ2B3d6Bih3f/a9MPUGH+zvDgTVfE9IHY2qQZZRVGqcjxWviHum2pPk+5b+TP9wo0ZJO4yO5eNT5aMrKRWUgTqytDlnsm0sbrS2duGPT4GctDE0pmlzrOGwvoCYq7WM2lAAAAAElFTkSuQmCC);
+}
+button.icon.prev {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAkFBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9oY44IAAAAL3RSTlMAAQMECA4PFBsgISQoQEhSVF5gZHFygI6QlpmfoqWqsbKztLa3vcPExcnX4fHz+wav99QAAABlSURBVHgBZcHnEsFAGIbRh9V7IUSxBNHz3v/d+bEzdr9xDsHoPiA11bNHYqlrm0SmfYPI5VrXiFpeGalzNcN4fw7H00+xY1KU5S3y/HObHMOttK1jLOSbGHM9Ohjj6tXHGF66BF8TQglKihIdKwAAAABJRU5ErkJggg==);
+}
+button.icon.next {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAkFBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9oY44IAAAAL3RSTlMAAQMECA4PFBsgISQoQEhSVF5gZHFygI6QlpmfoqWqsbKztLa3vcPExcnX4fHz+wav99QAAABnSURBVHgBVc3XEkExGMTx1XsnRBGC6Nn3fzszmHO+/d3992bx1zkPIHrPPIJo3zmDaATOIaobLmsQfq3DT7iWUopjbOOxcNi/XxDTfJJ2DE2TlRW9fanv6GC0LlzY7j44gdW/DfH1Acz1CUojRF8OAAAAAElFTkSuQmCC);
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.dropdown::after {
+  content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSI3cHgiIGhlaWdodD0iNXB4IiB2aWV3Qm94PSIwIDAgNyA1IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4NCiAgICA8dGl0bGU+RHJvcGRvd248L3RpdGxlPg0KICAgIDxkZWZzLz4NCiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBza2V0Y2g6dHlwZT0iTVNQYWdlIj4NCiAgICAgICAgPGcgaWQ9IkRyb3Bkb3duIiBza2V0Y2g6dHlwZT0iTVNMYXllckdyb3VwIj4NCiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUtMSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIgeD0iMCIgeT0iMCIgd2lkdGg9IjciIGhlaWdodD0iNSIvPg0KICAgICAgICAgICAgPHBhdGggZD0iTTAsMSBMMy40ODc2NTM0OSwzLjczNzA3NjA0IEw2Ljk3NTMwNjk5LDEiIGlkPSJQYXRoLTQ3IiBzdHJva2U9IiNGRkZGRkYiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz4NCiAgICAgICAgPC9nPg0KICAgIDwvZz4NCjwvc3ZnPg0K);
+  margin-left: 5px;
+}
+
+/**
+ * PAGES
+ */
+
+main .IndexPage-container,
+main .NotFoundPage-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+}
+
+/* IndexPage */
+main .IndexPage-container img {
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+  filter: drop-shadow(0 9px 30px 0 rgba(35, 39, 42, .1));
+}
+
+main .IndexPage-container p {
+  margin: 5px 0 20px 0;
+  font-size: 1.5em;
+  color: #AAA;
+}
+
+/* NotFoundPage */
+main .NotFoundPage-container img {
+  animation: float 3s infinite cubic-bezier(.175, .885, .32, 1.275);
+}
+
+@keyframes float {
+  from {
+    transform:translateY(0);
+    filter: saturate(0);
+  }
+  60% {
+    transform:translateY(-10px);
+    filter: saturate(1);
+  }
+  to {
+    transform:translateY(0);
+    filter: saturate(0);
+  }
+}
