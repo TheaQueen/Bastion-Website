@@ -11,11 +11,13 @@ class SiteBanner extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({
-        className: 'isVisible'
-      });
-    }, 30000);
+    if (banner.description.trim().length) {
+      setTimeout(() => {
+        this.setState({
+          className: 'isVisible'
+        });
+      }, 3000);
+    }
   }
 
   hideBanner() {
