@@ -16,7 +16,7 @@ class SiteBanner extends React.Component {
         this.setState({
           className: 'isVisible'
         });
-      }, 3000);
+      }, 30000);
     }
   }
 
