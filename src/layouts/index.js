@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import SiteBanner from '../components/SiteBanner'
 import './index.css'
 
 class DefaultLayout extends React.Component {
@@ -23,6 +24,7 @@ class DefaultLayout extends React.Component {
         <Header />
         <main>{this.props.children()}</main>
         <Footer />
+        <SiteBanner />
       </root>
     );
   }
