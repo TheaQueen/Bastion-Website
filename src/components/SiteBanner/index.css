@@ -1,0 +1,49 @@
+#SiteBanner {
+  position: fixed;
+  bottom: 0;
+}
+
+#SiteBanner {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 50px;
+  min-width: 50px;
+  padding: 15px;
+  background-color: #62d5fb;
+  background-color: rgba(98, 213, 251, .95);
+  color: #18191c;
+  box-shadow: 0 9px 30px 0 rgba(35,39,42,.3);
+  border: 1px solid #40bafb;
+  border: 1px solid rgba(64, 186, 251, .95);
+  border-radius: 3px;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  cursor: pointer;
+  opacity: 0;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+
+#SiteBanner.isVisible {
+  bottom: 15px;
+  opacity: 1;
+}
+
+#SiteBanner.isHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#SiteBanner:hover {
+  bottom: 20px;
+  background-color: #62d5fb;
+  box-shadow: 0 12px 30px 0 rgba(35,39,42,.3);
+  border: 1px solid #40bafb;
+}
+
+#SiteBanner .title {
+  display: block;
+  font-weight: bold;
+}
