@@ -1,8 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import showdown from 'showdown'
 import ExternalLink from '../../components/ExternalLink.js'
 import axios from 'axios';
 import './index.css'
+
+const converter = new showdown.Converter()
 
 class CommandsPage extends React.Component {
   constructor(props) {
@@ -92,9 +95,7 @@ class CommandsPage extends React.Component {
                             </div>
                           </td>
                           <td>
-                            <div className='commandDescription'>
-                              {command.description}
-                            </div>
+                            <div className='commandDescription' dangerouslySetInnerHTML={{__html: converter.makeHtml(command.description)}}></div>
                           </td>
                         </tr>
                       );
