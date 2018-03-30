@@ -9,7 +9,8 @@
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-nprogress": "^1.0.12",
     "gatsby-plugin-react-helmet": "^2.0.5",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "showdown": "^1.8.6"
   },
   "keywords": [],
   "license": "GPL-3.0",
