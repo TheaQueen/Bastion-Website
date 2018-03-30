@@ -1,13 +1,17 @@
 import React from 'react'
+import showdown from 'showdown'
 import ExternalLink from '../../components/ExternalLink.js'
 import faq from './faq.json'
 import './index.css'
+
+const converter = new showdown.Converter()
 
 class FAQPage extends React.Component {
   questions() {
     let questions = [];
     for (let questionGroup in faq) {
       for (let question of faq[questionGroup]) {
+        question.answer = converter.makeHtml(question.answer);
         questions.push(question);
       }
     }
@@ -28,7 +32,7 @@ class FAQPage extends React.Component {
                 return (
                   <div className='question' key={i}>
                     <h4>{question.question}</h4>
-                    <p>{question.answer}</p>
+                    <p dangerouslySetInnerHTML={{__html: question.answer}}></p>
                     <img src={question.image} alt='' />
                   </div>
                 );
