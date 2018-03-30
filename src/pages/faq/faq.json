@@ -7,7 +7,7 @@
     },
     {
       "question": "How do I get an ID (User ID, Role ID, Channel ID, Guild ID, etc.)?",
-      "answer": "Turn on Developer Mode in the Discord client (User Settings -> Appearance).\nFor getting User ID/Channel ID/Guild ID, Right-Click on the User/Channel/Guild and select Copy ID.\nFor Role IDs, you need to Right-Click on the role mention (@someRole) and select Copy ID.",
+      "answer": "Turn on Developer Mode in the Discord client (User Settings -> Appearance).<br>For getting User ID/Channel ID/Guild ID, Right-Click on the User/Channel/Guild and select Copy ID.<br>For Role IDs, you need to Right-Click on the role mention (@someRole) and select Copy ID.",
       "image": ""
     }
   ],
@@ -29,7 +29,50 @@
     },
     {
       "question": "How can I support the Bastion Bot project?",
-      "answer": "If you liked the Bastion Bot project and want to support it, there are quite few ways of doing that:<br>You can contribute to [Bastion's code on GitHub](https://github.com/TheBastionBot/) and improve it or add new features.<br>You can [Donate via PayPal](https://paypal.me/snkrsnkampa) or [Support on Patreon](https://patreon.com/snkrsnkampa) so that this amazing project is maintained and run forever.",
+      "answer": "If you liked the Bastion Bot project and want to support it, there are quite few ways of doing that:<br>You can contribute to [Bastion's code on GitHub](https://github.com/TheBastionBot/) and improve it or add new features.<br>You can [Donate via PayPal](https://paypal.me/snkrsnkampa) or [Support on Patreon](https://patreon.com/bastionbot) so that this amazing project is maintained and run forever.",
+      "image": ""
+    }
+  ],
+  "install": [
+    {
+      "question": "The installer/updater stops with a <code>Killed</code> error or Bastion stops with a <code>Killed</code> error in the logs, what do I do?",
+      "answer": "This error happens when on low memory (e.g. 512 MB) Computers/Servers that don't have a swap file or if the swap size is not enough. But don't worry, it's not a big deal. It can be fixed easily by adding/updating the swap file (I recommend the size of swap file to be double the size of your RAM). If you don't know how to do that, follow the steps given [here](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-12-04?comment=551).",
+      "image": ""
+    },
+    {
+      "question": "How do I see the Bastion Bot's log in Linux/macOS?",
+      "answer": "Inside the `Bastion` directory, run: ```bash ./bastion.sh --show```",
+      "image": ""
+    }
+  ],
+  "configuration": [
+    {
+      "question": "How do I add more than one Owner to Bastion?",
+      "answer": "Open the `credentials.json` file inside the `Bastion/settings/` directory, with a text editor.<br>Add another owner ID in the owner ID section below your ID.<br>Save & close the file.",
+      "image": ""
+    }
+  ],
+  "commands": [
+    {
+      "question": "How do I know how to use a specific command?",
+      "answer": "To get help on the usage & examples of a any command, run the help <command> command (using the appropriate prefix of Bastion in the Discord Server) in any Discord Server where the Bastion Bot is present or go to the commands section in this website.",
+      "image": ""
+    },
+    {
+      "question": "What are the variables that I can use in greeting message, farewell message, triggers' responses, etc.?",
+      "answer": "You can use the following variables:<br>`$user` - Mentions the user that triggered this event.<br>`$username` - the username of the user that triggered this event.<br>`$server` - The name of the server that this event was triggered on.<br>`$prefix` - The prefix that the Bastion BOT uses in the guild where this ever was triggered.<br>`$mention` - Mentions the user in the response, that was mentioned in the trigger (only available for triggers' responses).",
+      "image": ""
+    }
+  ],
+  "music": [
+    {
+      "question": "Music commands are not working in the Public Bastion Bot?",
+      "answer": "Music is disabled in the Public Bastion Bot due to high hosting and maintenance costs for serving music to a huge number of Discord Servers. If you want to use the music module, try [hosting Bastion](https://docs.bastionbot.org/) on your computer/server.",
+      "image": ""
+    },
+    {
+      "question": "Why is my music laggy?",
+      "answer": "That can be due to various reasons. Maybe your computer/server, where you are hosting the Bastion Bot, has connection/bandwidth issues. Or latency from your computer/server to Discord is high. [Try changing your Discord Voice Server region](https://support.discordapp.com/hc/en-us/articles/216661717-How-do-I-change-my-Voice-Server-Region-) to a location near your computer/server.",
       "image": ""
     }
   ]
