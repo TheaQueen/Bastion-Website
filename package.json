@@ -23,7 +23,7 @@
     "serve": "gatsby serve -op 7776",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run build && gh-pages -d public"
+    "deploy": "npm run build && gh-pages -d public -r https://github.com/TheBastionBot/thebastionbot.github.io -b master -m \"Website Updated\""
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
