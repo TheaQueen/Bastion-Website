@@ -48,12 +48,18 @@ class HTML extends React.Component {
             }
           />
 
+          <meta name='twitter:card' content='summary_large_image' />
+          <meta name="twitter:site" content="@TheBastionBot" />
+          <meta name="twitter:creator" content="@k3rn31p4nic" />
+
           <meta property='og:site_name' content='The Bastion Bot' />
           <meta
+            name='twitter:title'
             property='og:title'
             content='The Bastion Bot - One of the best Discord Bot'
           />
           <meta
+            name='twitter:description'
             property='og:description'
             content='Give awesome perks to your Discord server!'
           />
@@ -62,6 +68,7 @@ class HTML extends React.Component {
           <meta property='og:image:height' content='524' />
           <meta property='og:type' content='website' />
           <meta
+            name='twitter:image'
             property='og:image'
             content='https://resources.bastionbot.org/og-image.jpg'
           />
