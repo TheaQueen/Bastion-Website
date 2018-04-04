@@ -1,0 +1,32 @@
+{
+  "name": "bastionbot.org",
+  "description": "The homepage of The Bastion Bot Project.",
+  "version": "4.0.0",
+  "homepage": "https://bastionbot.org",
+  "private": true,
+  "author": "Sankarsan Kampa (a.k.a. k3rnr3p1ni4c)",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "gatsby": "^1.9.202",
+    "gatsby-link": "^1.6.37",
+    "gatsby-plugin-nprogress": "^1.0.12",
+    "gatsby-plugin-react-helmet": "^2.0.5",
+    "react-helmet": "^5.2.0",
+    "showdown": "^1.8.6"
+  },
+  "keywords": [],
+  "license": "GPL-3.0",
+  "main": "",
+  "scripts": {
+    "start": "gatsby develop -op 1337",
+    "build": "gatsby build",
+    "serve": "gatsby serve -op 7776",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build && gh-pages -d public -r https://github.com/TheBastionBot/thebastionbot.github.io -b master -m \"Website Updated\""
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "prettier": "^1.10.2"
+  }
+}

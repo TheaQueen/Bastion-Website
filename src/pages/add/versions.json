@@ -1,0 +1,12 @@
+[
+  {
+    "title": "I'll add the public Bastion",
+    "description": "Music is disabled in the public Bastion due to hosting &amp; maintenace cost for so many Discord servers.",
+    "url": "https://discordapp.com/oauth2/authorize?client_id=267035345537728512&scope=bot&permissions=2146958463"
+  },
+  {
+    "title": "I'll host Bastion",
+    "description": "You get to experience the the every features of Bastion; play high quality music, configure it the way you want, custom avatar, username. Whole set of bot owner only commands at the press of your keyboard.",
+    "url": "https://docs.bastionbot.org"
+  }
+]

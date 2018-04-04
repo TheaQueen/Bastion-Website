@@ -1,0 +1,86 @@
+#commands .header,
+#commands .container {
+  padding: 20px;
+  min-height: 25vh;
+  margin-bottom: 40px;
+}
+
+#commands .header {
+  text-align: center;
+}
+
+#commands .container {
+  border-radius: 8px;
+  background-color: rgba(32, 34, 37, .5);
+  box-shadow: 0 9px 30px 0 rgba(35,39,42,.1);
+  overflow-x: auto;
+}
+
+#commandFilter {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(32, 34, 37, .5);
+  width: 50%;
+  min-width: 200px;
+  color: white;
+  text-align: center;
+  transition: background-color .3s ease-in-out;
+  font-size: 1.2em;
+}
+
+#commandFilter:focus {
+  background-color: rgba(32, 34, 37, .8);
+}
+#commandFilter:hover {
+  background-color: rgba(32, 34, 37, 1);
+}
+
+#commandsTable {
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#commandsTable tr td {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#commandsTable thead tr td {
+  font-weight: bold;
+  color: #3fbefb;
+}
+
+#commandsTable tr td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#commandsTable tr td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#commandsTable tr:hover > * {
+  background-color: rgba(32, 34, 37, 1);
+}
+
+#commandsTable .commandName code {
+  padding: 3px 5px;
+  border-radius: 3px;
+  background-color: black;
+}
+
+#commandsTable .commandModule {
+  margin-top: 5px;
+}
+
+#commandsTable .commandModule code {
+  padding: 3px 5px;
+  border-radius: 3px;
+  background-color: #61d6fb;
+  color: black;
+  text-transform: uppercase;
+  font-size: .8em;
+}
