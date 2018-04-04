@@ -1,11 +1,11 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import showdown from 'showdown'
-import ExternalLink from '../../components/ExternalLink.js'
+import React from 'react';
+import Link from 'gatsby-link';
+import showdown from 'showdown';
 import axios from 'axios';
-import './index.css'
+import ExternalLink from '../../components/ExternalLink.js';
+import './index.css';
 
-const converter = new showdown.Converter()
+const converter = new showdown.Converter();
 
 class CommandsPage extends React.Component {
   constructor(props) {
@@ -61,16 +61,23 @@ class CommandsPage extends React.Component {
       <div id='commands'>
         <div className='header'>
           <h1>Bastion Commands</h1>
-          <p>Check out the commands list of Bastion that you can use with it.</p>
+          <p>
+            Check out the commands list of Bastion that you can use with it.
+          </p>
           <div>
-            <input id='commandFilter' type='text' placeholder='🔍 Search commands' onKeyUp={() => this.filterCommands()} />
+            <input
+              id='commandFilter'
+              type='text'
+              placeholder='🔍 Search commands'
+              onKeyUp={ () => this.filterCommands() }
+            />
           </div>
         </div>
 
         <div className='container'>
           {
-            this.state.commands ?
-              <table id='commandsTable' cellSpacing='0' cellPadding='0'>
+            this.state.commands
+            ? <table id='commandsTable' cellSpacing='0' cellPadding='0'>
                 <thead>
                   <tr>
                     <td style={{ width: '30%' }}>
@@ -85,17 +92,23 @@ class CommandsPage extends React.Component {
                   {
                     this.state.commands.map((command, i) => {
                       return (
-                        <tr className='command' key={i}>
+                        <tr className='command' key={ i }>
                           <td>
                             <div className='commandName'>
-                              <code>{command.name}</code>
+                              <code>{ command.name }</code>
                             </div>
-                            <div className='commandModule' title={`This command belongs to the ${command.module} module`}>
-                              <code>{command.module}</code>
+                            <div
+                              className='commandModule'
+                              title={ `This command belongs to the ${command.module} module` }
+                            >
+                              <code>{ command.module }</code>
                             </div>
                           </td>
                           <td>
-                            <div className='commandDescription' dangerouslySetInnerHTML={{__html: converter.makeHtml(command.description)}}></div>
+                            <div
+                              className='commandDescription'
+                              dangerouslySetInnerHTML={{ __html: converter.makeHtml(command.description) }}
+                            />
                           </td>
                         </tr>
                       );
@@ -103,8 +116,7 @@ class CommandsPage extends React.Component {
                   }
                 </tbody>
               </table>
-            :
-              <div>Loading Commands...</div>
+            : <div>Loading Commands...</div>
           }
         </div>
       </div>
@@ -112,4 +124,4 @@ class CommandsPage extends React.Component {
   }
 }
 
-export default CommandsPage
+export default CommandsPage;

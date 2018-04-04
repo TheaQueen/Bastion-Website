@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import ExternalLink from '../components/ExternalLink.js'
+import React from 'react';
+import Link from 'gatsby-link';
+import ExternalLink from '../components/ExternalLink.js';
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -28,13 +28,22 @@ class IndexPage extends React.Component {
   render() {
     return (
       <div className='IndexPage-container'>
-        <img src={this.state.bastionLogo} onClick={() => this.increment()} width='1024' height='176' />
+        <img
+          src={ this.state.bastionLogo }
+          onClick={ () => this.increment() }
+          width='1024'
+          height='176'
+        />
         <p>Give awesome perks to your Discord server!</p>
-        <Link to='/add'><button>Add Bastion to Discord</button></Link>
-        <ExternalLink to='https://discord.gg/fzx8fkt'><button className='primary'>Join our Discord server</button></ExternalLink>
+        <Link to='/add'>
+          <button>Add Bastion to Discord</button>
+        </Link>
+        <ExternalLink to='https://discord.gg/fzx8fkt'>
+          <button className='primary'>Join our Discord server</button>
+        </ExternalLink>
       </div>
     );
   }
 }
 
-export default IndexPage
+export default IndexPage;
