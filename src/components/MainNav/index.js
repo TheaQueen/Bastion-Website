@@ -38,7 +38,10 @@ class MainNav extends React.Component {
 
   render() {
     return (
-      <nav style={{ display: this.props.isNavVisible ? '' : 'none' }} onClick={this.props.onClick}>
+      <nav
+        style={{ display: this.props.isNavVisible ? '' : 'none' }}
+        onClick={ this.props.onClick }
+      >
         <div className='MainNav MainNav-left'>
           <ul className='OuterNav'>
             <NavLink name='Home' to='/' className='min-960px' />
@@ -46,9 +49,21 @@ class MainNav extends React.Component {
             <NavLink name='Commands' to='/commands' />
             <NavExLink name='Guide' to='https://docs.bastionbot.org' />
             <NavExLink name='Help &amp; Support' to='https://discord.gg/fzx8fkt' />
-            <li name='More' onMouseOver={() => this.toggleInnerNav()} onMouseOut={() => this.toggleInnerNav()}>
-              <span className='dropdown' style={{ display: this.state.width > 960 ? '' : 'none' }}>More</span>
-              <ul className='InnerNav' style={{ display: this.state.width <= 960 || this.state.isInnerNavVisible ? '' : 'none' }}>
+            <li
+              name='More'
+              onMouseOver={ () => this.toggleInnerNav() }
+              onMouseOut={ () => this.toggleInnerNav() }
+            >
+              <span
+                className='dropdown'
+                style={{ display: this.state.width > 960 ? '' : 'none' }}
+              >
+                More
+              </span>
+              <ul
+                className='InnerNav'
+                style={{ display: this.state.width <= 960 || this.state.isInnerNavVisible ? '' : 'none' }}
+              >
                 <NavLink name='FAQ' to='/faq' />
                 <NavLink name='Tools' to='/tools' />
                 <NavLink name='Sponsors' to='/sponsors' />

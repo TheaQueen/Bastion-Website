@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import MainNav from '../MainNav/'
-import './index.css'
+import React from 'react';
+import Link from 'gatsby-link';
+import MainNav from '../MainNav/';
+import './index.css';
 
 class Header extends React.Component {
   constructor(props) {
@@ -41,14 +41,17 @@ class Header extends React.Component {
     return (
       <header>
         <div className='innerHeader'>
-          <Link to='/' onClick={() => this.toggleNav()}>
-            <div className='headerLogo'></div>
+          <Link to='/' onClick={ () => this.toggleNav() }>
+            <div className='headerLogo' />
           </Link>
-          <MainNav isNavVisible={this.state.width > 960 || this.state.isNavVisible} onClick={() => this.toggleNav()} />
+          <MainNav
+            isNavVisible={ this.state.width > 960 || this.state.isNavVisible }
+            onClick={ () => this.toggleNav() }
+          />
         </div>
       </header>
     );
   }
 }
 
-export default Header
+export default Header;
