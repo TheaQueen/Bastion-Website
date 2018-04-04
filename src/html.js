@@ -66,11 +66,18 @@ class HTML extends React.Component {
             content='https://resources.bastionbot.org/og-image.jpg'
           />
 
-          <link
-            rel='icon'
-            type='image/x-icon'
-            href='https://resources.bastionbot.org/favicon.ico'
-          />
+          <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png'>
+          <link rel='shortcut icon' href='https://bastionbot.org/favicon.ico' />
+          <link rel='icon' type='image/x-icon' href='https://bastionbot.org/favicon.ico' />
+          <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png'>
+          <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png'>
+          <link rel='manifest' href='/site.webmanifest'>
+          <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#40bbfb'>
+          <meta name='apple-mobile-web-app-title' content='The Bastion Bot'>
+          <meta name='application-name' content='The Bastion Bot'>
+          <meta name='msapplication-TileColor' content='#070a0c'>
+          <meta name='theme-color' content='#070a0c'>
+
           { this.props.headComponents }
           { css }
         </head>
