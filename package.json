@@ -1,7 +1,9 @@
 {
   "name": "bastionbot.org",
   "description": "The homepage of The Bastion Bot Project.",
-  "version": "1.0.0",
+  "version": "4.0.0",
+  "homepage": "https://bastionbot.org",
+  "private": true,
   "author": "Sankarsan Kampa (a.k.a. k3rnr3p1ni4c)",
   "dependencies": {
     "axios": "^0.18.0",
