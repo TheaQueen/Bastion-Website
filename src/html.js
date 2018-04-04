@@ -1,48 +1,58 @@
-import React from "react"
+import React from 'react';
 
-let stylesStr
-if (process.env.NODE_ENV === `production`) {
+let stylesStr;
+if (process.env.NODE_ENV === 'production') {
   try {
-    stylesStr = require(`!raw-loader!../public/styles.css`)
+    stylesStr = require('!raw-loader!../public/styles.css');
   } catch (e) {
-    console.log(e)
+    console.error(e);
   }
 }
 
-module.exports = class HTML extends React.Component {
+class HTML extends React.Component {
   render() {
-    let css
-    if (process.env.NODE_ENV === `production`) {
+    let css;
+    if (process.env.NODE_ENV === 'production') {
       css = (
         <style
-          id="gatsby-inlined-css"
+          id='gatsby-inlined-css'
           dangerouslySetInnerHTML={{ __html: stylesStr }}
         />
-      )
+      );
     }
     return (
-      <html {...this.props.htmlAttributes}>
+      <html { ...this.props.htmlAttributes }>
         <head>
-          <meta charSet="utf-8" />
-          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+          <meta charSet='utf-8' />
+          <meta httpEquiv='x-ua-compatible' content='ie=edge' />
           <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            name='viewport'
+            content={
+              'width=device-width, user-scalable=no, shrink-to-fit=no,'
+              + ' initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0'
+            }
           />
-          <link rel="icon" type="image/x-icon" href="https://resources.bastionbot.org/favicon.ico" />
-          {this.props.headComponents}
-          {css}
+          <link
+            rel='icon'
+            type='image/x-icon'
+            href='https://resources.bastionbot.org/favicon.ico'
+          />
+          { this.props.headComponents }
+          { css }
         </head>
-        <body {...this.props.bodyAttributes}>
-          {this.props.preBodyComponents}
+
+        <body { ...this.props.bodyAttributes }>
+          { this.props.preBodyComponents }
           <div
-            key={`body`}
-            id="___gatsby"
+            key={ 'body' }
+            id='___gatsby'
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
-          {this.props.postBodyComponents}
+          { this.props.postBodyComponents }
         </body>
       </html>
     )
   }
-}
+};
+
+export default HTML;
