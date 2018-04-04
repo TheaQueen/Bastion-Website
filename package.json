@@ -18,8 +18,9 @@
   "license": "GPL-3.0",
   "main": "",
   "scripts": {
+    "start": "gatsby develop -op 1337",
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "serve": "gatsby serve -op 7776",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "npm run build && gh-pages -d public"
