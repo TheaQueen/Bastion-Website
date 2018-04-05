@@ -39,7 +39,7 @@ class Footer extends React.Component {
             <div className='Footer-card'>
               <h3>Supporters</h3>
               <Link to='/sponsors'>Sponsors</Link>
-              <ExternalLink to='https://devs.bastionbot.org'>
+              <ExternalLink to='https://dev.bastionbot.org'>
                 Developers
               </ExternalLink>
               <ExternalLink to='https://i18n.bastionbot.org'>
