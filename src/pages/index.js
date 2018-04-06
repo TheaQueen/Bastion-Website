@@ -39,7 +39,7 @@ class IndexPage extends React.Component {
           <button>Add Bastion to Discord</button>
         </Link>
         <ExternalLink to='https://discord.gg/fzx8fkt'>
-          <button className='primary'>Join our Discord server</button>
+          <button className='primary'>Join Bastion HQ</button>
         </ExternalLink>
       </div>
     );
