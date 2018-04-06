@@ -64,6 +64,18 @@
       "image": ""
     }
   ],
+  "currency": [
+    {
+      "question": "What can I do with Bastion currency?",
+      "answer": "You can sell & buy stuff from the shops (gift shop, server shop or role shop), you can also gamble in the games in the gambling module. You can also give your Bastion Currency to your friends. And many new features are being added every day to Bastion, so there might be many more ways you can use your currency in future releases of Bastion.",
+      "image": ""
+    },
+    {
+      "question": "How can I get Bastion Currency?",
+      "answer": "You get currency when you level up in the server. You can also get more currency when you win in a gambling games. But the two best ways to get more currencies is to use the `claim`/`daily` command every day and if you're a server owner, you can sell items/roles in your server and when users buy it, you'll get 90% of the profit.",
+      "image": ""
+    }
+  ],
   "music": [
     {
       "question": "Music commands are not working in the Public Bastion Bot?",
