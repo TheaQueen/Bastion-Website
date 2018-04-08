@@ -74,6 +74,11 @@
       "question": "How can I get Bastion Currency?",
       "answer": "You get currency when you level up in the server. You can also get more currency when you win in a gambling games. But the two best ways to get more currencies is to use the `claim`/`daily` command every day and if you're a server owner, you can sell items/roles in your server and when users buy it, you'll get 90% of the profit.",
       "image": ""
+    },
+    {
+      "question": "How can I get more Bastion Currency with the claim/daily command?",
+      "answer": "You can normally get upto 100 Bastion Currencies when you use the `claim`/`daily` command. But you can get 200% more Bastion currencies if you use the `claim`/`daily` command in [Bastion HQ](https://discord.gg/fzx8fkt). Also, if you've ever [donated us on PayPal](https://paypal.me/snkrsnkampa) or if you've ever [been our Patron](https://patreon.com/bastionbot), you'll get another 100 Bastion Currencies added to your daily reward. And if you're a currently [our Patron](https://patreon.com/bastionbot), 500 Bastion Currencies will be added instead.",
+      "image": ""
     }
   ],
   "music": [
