@@ -1,7 +1,10 @@
 import React from 'react';
+import showdown from 'showdown';
 import ExternalLink from '../../components/ExternalLink.js';
 import features from './features.json';
 import './index.css';
+
+const converter = new showdown.Converter();
 
 class FeaturesPage extends React.Component {
   render() {
@@ -43,7 +46,9 @@ class FeaturesPage extends React.Component {
                   <div className='feature right' key={i}>
                     <div className='details'>
                       <h4>{ feature.title }</h4>
-                      <p>{ feature.description }</p>
+                      <p
+                        dangerouslySetInnerHTML={{ __html: converter.makeHtml(feature.description) }}
+                      />
                     </div>
                     <div className='image'>
                       <img src={ feature.image } alt='Feature Screenshot' />
